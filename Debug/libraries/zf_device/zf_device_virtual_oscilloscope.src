@@ -1,0 +1,671 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc3524a --dep-file=libraries/zf_device/zf_device_virtual_oscilloscope.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\code -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Configurations -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_components -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_device -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_driver -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_device/zf_device_virtual_oscilloscope.src ../libraries/zf_device/zf_device_virtual_oscilloscope.c"
+	.compiler_name		"ctc"
+	;source	'../libraries/zf_device/zf_device_virtual_oscilloscope.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.zf_device_virtual_oscilloscope.crc_check',code,cluster('crc_check')
+	.sect	'.text.zf_device_virtual_oscilloscope.crc_check'
+	.align	2
+	
+; Function crc_check
+.L10:
+crc_check:	.type	func
+	mov.u	d2,#65535
+.L49:
+	mov	d15,#0
+.L51:
+	j	.L2
+.L3:
+	addsc.a	a15,a4,d15,#0
+	ld.bu	d0,[a15]
+.L108:
+	xor	d2,d0
+.L109:
+	mov	d0,#0
+.L53:
+	j	.L4
+.L5:
+	jz.t	d2:0,.L6
+.L110:
+	sha	d2,#-1
+.L50:
+	mov.u	d1,#40961
+.L54:
+	xor	d2,d1
+.L111:
+	j	.L7
+.L6:
+	sha	d2,#-1
+.L7:
+	add	d0,#1
+.L4:
+	jlt.u	d0,#8,.L5
+.L112:
+	add	d15,#1
+.L52:
+	extr.u	d15,d15,#0,#8
+.L2:
+	jlt.u	d15,#8,.L3
+.L113:
+	j	.L8
+.L8:
+	ret
+.L40:
+	
+__crc_check_function_end:
+	.size	crc_check,__crc_check_function_end-crc_check
+.L26:
+	; End of function
+	
+	.sdecl	'.text.zf_device_virtual_oscilloscope.virtual_oscilloscope_data_conversion',code,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.text.zf_device_virtual_oscilloscope.virtual_oscilloscope_data_conversion'
+	.align	2
+	
+	.global	virtual_oscilloscope_data_conversion
+; Function virtual_oscilloscope_data_conversion
+.L12:
+virtual_oscilloscope_data_conversion:	.type	func
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L66:
+	extr.u	d15,d4,#0,#16
+.L67:
+	and	d15,#255
+.L68:
+	st.b	[a15],d15
+.L69:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L70:
+	extr.u	d15,d4,#0,#16
+.L71:
+	sha	d15,#-8
+.L72:
+	st.b	[a15]1,d15
+.L73:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L74:
+	extr.u	d15,d5,#0,#16
+.L75:
+	and	d15,#255
+.L76:
+	st.b	[a15]2,d15
+.L77:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L78:
+	extr.u	d15,d5,#0,#16
+.L79:
+	sha	d15,#-8
+.L80:
+	st.b	[a15]3,d15
+.L81:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L82:
+	extr.u	d15,d6,#0,#16
+.L83:
+	and	d15,#255
+.L84:
+	st.b	[a15]4,d15
+.L85:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L86:
+	extr.u	d15,d6,#0,#16
+.L87:
+	sha	d15,#-8
+.L88:
+	st.b	[a15]5,d15
+.L89:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L90:
+	extr.u	d15,d7,#0,#16
+.L91:
+	and	d15,#255
+.L92:
+	st.b	[a15]6,d15
+.L93:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L94:
+	extr.u	d15,d7,#0,#16
+.L95:
+	sha	d15,#-8
+.L96:
+	st.b	[a15]7,d15
+.L97:
+	movh.a	a4,#@his(virtual_oscilloscope_data)
+	lea	a4,[a4]@los(virtual_oscilloscope_data)
+.L98:
+	mov	d4,#8
+.L55:
+	call	crc_check
+.L56:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L99:
+	and	d15,d2,#255
+.L100:
+	st.b	[a15]8,d15
+.L101:
+	movh.a	a15,#@his(virtual_oscilloscope_data)
+	lea	a15,[a15]@los(virtual_oscilloscope_data)
+.L102:
+	sha	d2,#-8
+.L57:
+	st.b	[a15]9,d2
+.L103:
+	ret
+.L29:
+	
+__virtual_oscilloscope_data_conversion_function_end:
+	.size	virtual_oscilloscope_data_conversion,__virtual_oscilloscope_data_conversion_function_end-virtual_oscilloscope_data_conversion
+.L21:
+	; End of function
+	
+	.sdecl	'.bss.zf_device_virtual_oscilloscope.virtual_oscilloscope_data',data,cluster('virtual_oscilloscope_data')
+	.sect	'.bss.zf_device_virtual_oscilloscope.virtual_oscilloscope_data'
+	.global	virtual_oscilloscope_data
+virtual_oscilloscope_data:	.type	object
+	.size	virtual_oscilloscope_data,10
+	.space	10
+	.calls	'virtual_oscilloscope_data_conversion','crc_check'
+	.calls	'crc_check','',0
+	.calls	'virtual_oscilloscope_data_conversion','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L14:
+	.word	768
+	.half	3
+	.word	.L15
+	.byte	4
+.L13:
+	.byte	1
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L16
+	.byte	2
+	.byte	'short int',0,2,5
+.L30:
+	.byte	3
+	.word	206
+.L32:
+	.byte	3
+	.word	206
+.L34:
+	.byte	3
+	.word	206
+.L36:
+	.byte	3
+	.word	206
+.L38:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L43:
+	.byte	2
+	.byte	'unsigned char',0,1,8
+.L41:
+	.byte	4
+	.word	261
+	.byte	5
+	.byte	'__wchar_t',0,1,1,1
+	.word	206
+	.byte	2
+	.byte	'unsigned int',0,4,7,5
+	.byte	'__size_t',0,1,1,1
+	.word	301
+	.byte	2
+	.byte	'int',0,4,5,5
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	334
+	.byte	6,1,4
+	.word	361
+	.byte	5
+	.byte	'__codeptr',0,1,1,1
+	.word	363
+	.byte	5
+	.byte	'__intptr_t',0,1,1,1
+	.word	334
+	.byte	5
+	.byte	'__uintptr_t',0,1,1,1
+	.word	301
+	.byte	5
+	.byte	'_iob_flag_t',0,2,82,25
+	.word	239
+	.byte	5
+	.byte	'uint8',0,3,105,29
+	.word	261
+	.byte	5
+	.byte	'uint16',0,3,109,29
+	.word	239
+	.byte	2
+	.byte	'unsigned long int',0,4,7,5
+	.byte	'uint32',0,3,113,29
+	.word	474
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,5
+	.byte	'uint64',0,3,118,29
+	.word	510
+	.byte	5
+	.byte	'sint16',0,3,126,29
+	.word	206
+	.byte	2
+	.byte	'long int',0,4,5,5
+	.byte	'sint32',0,3,131,1,29
+	.word	566
+	.byte	2
+	.byte	'long long int',0,8,5,5
+	.byte	'sint64',0,3,138,1,29
+	.word	594
+	.byte	2
+	.byte	'float',0,4,4,5
+	.byte	'float32',0,3,167,1,29
+	.word	627
+	.byte	7
+	.byte	'void',0,4
+	.word	653
+	.byte	5
+	.byte	'pvoid',0,4,57,28
+	.word	659
+	.byte	5
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	594
+	.byte	2
+	.byte	'char',0,1,6,5
+	.byte	'int8',0,5,54,29
+	.word	699
+	.byte	5
+	.byte	'int16',0,5,55,29
+	.word	206
+	.byte	5
+	.byte	'int32',0,5,56,29
+	.word	334
+	.byte	5
+	.byte	'int64',0,5,57,29
+	.word	594
+.L48:
+	.byte	8,10
+	.word	261
+	.byte	9,9,0,0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L15:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,38,0,73,19,0,0,4,15,0,73,19
+	.byte	0,0,5,22,0,3,8,58,15,59,15,57,15,73,19,0,0,6,21,0,54,15,0,0,7,59,0,3,8,0,0,8,1,1,11,15,73,19,0,0,9,33
+	.byte	0,47,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L16:
+	.word	.L59-.L58
+.L58:
+	.half	3
+	.word	.L61-.L60
+.L60:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'F:\\Infineon\\AURIX-Studio-1.10.10\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std',0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common',0,0
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0,0,0,0
+	.byte	'stdio.h',0,1,0,0
+	.byte	'Platform_Types.h',0,2,0,0
+	.byte	'ifx_types.h',0,2,0,0
+	.byte	'zf_common_typedef.h',0,3,0,0,0
+.L61:
+.L59:
+	.sdecl	'.debug_info',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_info'
+.L17:
+	.word	370
+	.half	3
+	.word	.L18
+	.byte	4,1
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L20,.L19
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'virtual_oscilloscope_data_conversion',0,1,84,6,1,1,1
+	.word	.L12,.L29,.L11
+	.byte	4
+	.byte	'data1',0,1,84,56
+	.word	.L30,.L31
+	.byte	4
+	.byte	'data2',0,1,84,75
+	.word	.L32,.L33
+	.byte	4
+	.byte	'data3',0,1,84,94
+	.word	.L34,.L35
+	.byte	4
+	.byte	'data4',0,1,84,113
+	.word	.L36,.L37
+	.byte	5
+	.word	.L12,.L29
+	.byte	6
+	.byte	'crc_16',0,1,86,12
+	.word	.L38,.L39
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_line'
+.L19:
+	.word	.L63-.L62
+.L62:
+	.half	3
+	.word	.L65-.L64
+.L64:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0,0,0,0,0
+.L65:
+	.byte	5,5,7,0,5,2
+	.word	.L12
+	.byte	3,215,0,1,5,44,9
+	.half	.L66-.L12
+	.byte	1,5,58,9
+	.half	.L67-.L66
+	.byte	1,5,34,9
+	.half	.L68-.L67
+	.byte	1,5,5,9
+	.half	.L69-.L68
+	.byte	3,1,1,5,44,9
+	.half	.L70-.L69
+	.byte	1,5,58,9
+	.half	.L71-.L70
+	.byte	1,5,34,9
+	.half	.L72-.L71
+	.byte	1,5,5,9
+	.half	.L73-.L72
+	.byte	3,2,1,5,44,9
+	.half	.L74-.L73
+	.byte	1,5,58,9
+	.half	.L75-.L74
+	.byte	1,5,34,9
+	.half	.L76-.L75
+	.byte	1,5,5,9
+	.half	.L77-.L76
+	.byte	3,1,1,5,44,9
+	.half	.L78-.L77
+	.byte	1,5,58,9
+	.half	.L79-.L78
+	.byte	1,5,34,9
+	.half	.L80-.L79
+	.byte	1,5,5,9
+	.half	.L81-.L80
+	.byte	3,2,1,5,44,9
+	.half	.L82-.L81
+	.byte	1,5,58,9
+	.half	.L83-.L82
+	.byte	1,5,34,9
+	.half	.L84-.L83
+	.byte	1,5,5,9
+	.half	.L85-.L84
+	.byte	3,1,1,5,44,9
+	.half	.L86-.L85
+	.byte	1,5,57,9
+	.half	.L87-.L86
+	.byte	1,5,34,9
+	.half	.L88-.L87
+	.byte	1,5,5,9
+	.half	.L89-.L88
+	.byte	3,2,1,5,44,9
+	.half	.L90-.L89
+	.byte	1,5,58,9
+	.half	.L91-.L90
+	.byte	1,5,34,9
+	.half	.L92-.L91
+	.byte	1,5,5,9
+	.half	.L93-.L92
+	.byte	3,1,1,5,44,9
+	.half	.L94-.L93
+	.byte	1,5,58,9
+	.half	.L95-.L94
+	.byte	1,5,34,9
+	.half	.L96-.L95
+	.byte	1,5,25,9
+	.half	.L97-.L96
+	.byte	3,2,1,5,52,9
+	.half	.L98-.L97
+	.byte	1,5,5,9
+	.half	.L56-.L98
+	.byte	3,1,1,5,51,9
+	.half	.L99-.L56
+	.byte	1,5,34,9
+	.half	.L100-.L99
+	.byte	1,5,5,9
+	.half	.L101-.L100
+	.byte	3,1,1,5,51,9
+	.half	.L102-.L101
+	.byte	1,5,34,9
+	.half	.L57-.L102
+	.byte	1,5,1,9
+	.half	.L103-.L57
+	.byte	3,1,1,7,9
+	.half	.L21-.L103
+	.byte	0,1,1
+.L63:
+	.sdecl	'.debug_ranges',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_ranges'
+.L20:
+	.word	-1,.L12,0,.L21-.L12,0,0
+	.sdecl	'.debug_info',debug,cluster('crc_check')
+	.sect	'.debug_info'
+.L22:
+	.word	341
+	.half	3
+	.word	.L23
+	.byte	4,1
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L25,.L24
+	.byte	2
+	.word	.L13
+	.byte	3
+	.byte	'crc_check',0,1,48,15
+	.word	.L38
+	.byte	1,1
+	.word	.L10,.L40,.L9
+	.byte	4
+	.byte	'buff',0,1,48,33
+	.word	.L41,.L42
+	.byte	4
+	.byte	'crc_cnt',0,1,48,45
+	.word	.L43,.L44
+	.byte	5
+	.word	.L10,.L40
+	.byte	6
+	.byte	'crc_temp',0,1,50,12
+	.word	.L38,.L45
+	.byte	6
+	.byte	'i',0,1,51,11
+	.word	.L43,.L46
+	.byte	6
+	.byte	'j',0,1,51,14
+	.word	.L43,.L47
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('crc_check')
+	.sect	'.debug_abbrev'
+.L23:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('crc_check')
+	.sect	'.debug_line'
+.L24:
+	.word	.L105-.L104
+.L104:
+	.half	3
+	.word	.L107-.L106
+.L106:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0,0,0,0,0
+.L107:
+	.byte	5,14,7,0,5,2
+	.word	.L10
+	.byte	3,51,1,5,11,9
+	.half	.L49-.L10
+	.byte	3,2,1,5,27,9
+	.half	.L51-.L49
+	.byte	1,5,25,9
+	.half	.L3-.L51
+	.byte	3,2,1,5,18,9
+	.half	.L108-.L3
+	.byte	1,5,15,9
+	.half	.L109-.L108
+	.byte	3,1,1,5,25,9
+	.half	.L53-.L109
+	.byte	1,5,13,9
+	.half	.L5-.L53
+	.byte	3,2,1,5,38,7,9
+	.half	.L110-.L5
+	.byte	3,2,1,5,46,9
+	.half	.L50-.L110
+	.byte	1,5,44,9
+	.half	.L54-.L50
+	.byte	1,5,52,9
+	.half	.L111-.L54
+	.byte	1,5,37,9
+	.half	.L6-.L111
+	.byte	3,4,1,5,29,9
+	.half	.L7-.L6
+	.byte	3,120,1,5,25,9
+	.half	.L4-.L7
+	.byte	1,5,31,7,9
+	.half	.L112-.L4
+	.byte	3,125,1,5,27,9
+	.half	.L2-.L112
+	.byte	1,5,5,7,9
+	.half	.L113-.L2
+	.byte	3,15,1,5,1,9
+	.half	.L8-.L113
+	.byte	3,1,1,7,9
+	.half	.L26-.L8
+	.byte	0,1,1
+.L105:
+	.sdecl	'.debug_ranges',debug,cluster('crc_check')
+	.sect	'.debug_ranges'
+.L25:
+	.word	-1,.L10,0,.L26-.L10,0,0
+	.sdecl	'.debug_info',debug,cluster('virtual_oscilloscope_data')
+	.sect	'.debug_info'
+.L27:
+	.word	245
+	.half	3
+	.word	.L28
+	.byte	4,1
+	.byte	'../libraries/zf_device/zf_device_virtual_oscilloscope.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L13
+	.byte	3
+	.byte	'virtual_oscilloscope_data',0,1,38,7
+	.word	.L48
+	.byte	1,5,3
+	.word	virtual_oscilloscope_data
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('virtual_oscilloscope_data')
+	.sect	'.debug_abbrev'
+.L28:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('crc_check')
+	.sect	'.debug_loc'
+.L42:
+	.word	-1,.L10,0,.L40-.L10
+	.half	1
+	.byte	100
+	.word	0,0
+.L9:
+	.word	-1,.L10,0,.L40-.L10
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L44:
+	.word	-1,.L10,0,.L40-.L10
+	.half	1
+	.byte	84
+	.word	0,0
+.L45:
+	.word	-1,.L10,.L49-.L10,.L50-.L10
+	.half	1
+	.byte	82
+	.word	.L54-.L10,.L40-.L10
+	.half	1
+	.byte	82
+	.word	0,0
+.L46:
+	.word	-1,.L10,.L51-.L10,.L52-.L10
+	.half	1
+	.byte	95
+	.word	.L2-.L10,.L40-.L10
+	.half	1
+	.byte	95
+	.word	0,0
+.L47:
+	.word	-1,.L10,.L53-.L10,.L2-.L10
+	.half	5
+	.byte	144,32,157,32,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_loc'
+.L39:
+	.word	-1,.L12,.L56-.L12,.L57-.L12
+	.half	1
+	.byte	82
+	.word	0,0
+.L31:
+	.word	-1,.L12,0,.L55-.L12
+	.half	1
+	.byte	84
+	.word	0,0
+.L33:
+	.word	-1,.L12,0,.L56-.L12
+	.half	1
+	.byte	85
+	.word	0,0
+.L35:
+	.word	-1,.L12,0,.L56-.L12
+	.half	1
+	.byte	86
+	.word	0,0
+.L37:
+	.word	-1,.L12,0,.L56-.L12
+	.half	1
+	.byte	87
+	.word	0,0
+.L11:
+	.word	-1,.L12,0,.L29-.L12
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L114:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('crc_check')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L114,.L10,.L40-.L10
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('virtual_oscilloscope_data_conversion')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L114,.L12,.L29-.L12
+	; Module end

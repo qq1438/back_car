@@ -1,0 +1,23 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Rule: Commenting on Code Modifications
+
+## Context
+This rule applies when existing code is being modified or new code is being written as part of an edit.
+
+## Instructions
+
+1.  **No Unsolicited Comments**: When modifying code, do not add any new comments (block comments, inline comments, Doxygen-style comments, etc.) unless the user explicitly requests comments to be added or to explain a particularly complex or non-obvious section of the new/modified code.
+
+2.  **Preserve Existing Comments**: Existing comments in the codebase should generally be preserved unless the code they refer to is being removed or significantly changed in a way that renders the comment obsolete or misleading. If a comment becomes obsolete due to a code change, it should be removed or updated to accurately reflect the new code, but new explanatory comments should not be added without a user request.
+
+3.  **Focus on Clarity of Code**: Prioritize writing clear, self-documenting code that minimizes the need for explanatory comments. If the code is difficult to understand without comments, consider if the code itself can be refactored for better clarity before resorting to adding comments (unless requested).
+
+4.  **User Request is Key**: If the user asks for comments, then provide them as requested. The primary driver for adding comments during a modification task is a direct instruction from the user.
+
+## Rationale
+This rule ensures that the AI assistant does not clutter the code with unnecessary comments, especially when interacting with users who may prefer a cleaner codebase or have their own commenting conventions. It respects the user's preference for when and where comments should be added.
+

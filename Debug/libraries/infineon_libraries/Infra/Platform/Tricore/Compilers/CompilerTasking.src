@@ -1,0 +1,186 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc37032a --dep-file=libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\code -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Configurations -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_components -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_device -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_driver -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.src ../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c"
+	.compiler_name		"ctc"
+	;source	'../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.CompilerTasking.Ifx_C_Init',code,cluster('Ifx_C_Init')
+	.sect	'.text.CompilerTasking.Ifx_C_Init'
+	.align	2
+	
+	.global	Ifx_C_Init
+; Function Ifx_C_Init
+.L3:
+Ifx_C_Init:	.type	func
+	call	_c_init
+.L22:
+	ret
+.L13:
+	
+__Ifx_C_Init_function_end:
+	.size	Ifx_C_Init,__Ifx_C_Init_function_end-Ifx_C_Init
+.L12:
+	; End of function
+	
+	.calls	'Ifx_C_Init','_c_init'
+	.extern	_c_init
+	.calls	'Ifx_C_Init','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L5:
+	.word	614
+	.half	3
+	.word	.L6
+	.byte	4
+.L4:
+	.byte	1
+	.byte	'../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L7
+	.byte	2
+	.byte	'_c_init',0,1,59,17,1,1,1,1,3
+	.byte	'short int',0,2,5,4
+	.byte	'__wchar_t',0,1,1,1
+	.word	249
+	.byte	3
+	.byte	'unsigned int',0,4,7,4
+	.byte	'__size_t',0,1,1,1
+	.word	280
+	.byte	3
+	.byte	'int',0,4,5,4
+	.byte	'__ptrdiff_t',0,1,1,1
+	.word	313
+	.byte	5,1,6
+	.word	340
+	.byte	4
+	.byte	'__codeptr',0,1,1,1
+	.word	342
+	.byte	3
+	.byte	'unsigned char',0,1,8,4
+	.byte	'uint8',0,2,105,29
+	.word	365
+	.byte	3
+	.byte	'unsigned short int',0,2,7,4
+	.byte	'uint16',0,2,109,29
+	.word	396
+	.byte	3
+	.byte	'unsigned long int',0,4,7,4
+	.byte	'uint32',0,2,113,29
+	.word	433
+	.byte	4
+	.byte	'sint16',0,2,126,29
+	.word	249
+	.byte	3
+	.byte	'long int',0,4,5,4
+	.byte	'sint32',0,2,131,1,29
+	.word	484
+	.byte	3
+	.byte	'long long int',0,8,5,4
+	.byte	'sint64',0,2,138,1,29
+	.word	512
+	.byte	3
+	.byte	'float',0,4,4,4
+	.byte	'float32',0,2,167,1,29
+	.word	545
+	.byte	7
+	.byte	'void',0,6
+	.word	571
+	.byte	4
+	.byte	'pvoid',0,3,57,28
+	.word	577
+	.byte	4
+	.byte	'Ifx_TickTime',0,3,79,28
+	.word	512
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L6:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,46,0,3,8,58,15,59,15,57,15,54,15,39,12,63,12,60,12,0,0
+	.byte	3,36,0,3,8,11,15,62,15,0,0,4,22,0,3,8,58,15,59,15,57,15,73,19,0,0,5,21,0,54,15,0,0,6,15,0,73,19,0,0,7
+	.byte	59,0,3,8,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L7:
+	.word	.L15-.L14
+.L14:
+	.half	3
+	.word	.L17-.L16
+.L16:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c',0,0,0,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0,0
+.L17:
+.L15:
+	.sdecl	'.debug_info',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_info'
+.L8:
+	.word	279
+	.half	3
+	.word	.L9
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L11,.L10
+	.byte	2
+	.word	.L4
+	.byte	3
+	.byte	'Ifx_C_Init',0,1,57,6,1,1,1
+	.word	.L3,.L13,.L2
+	.byte	4
+	.word	.L3,.L13
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_abbrev'
+.L9:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_line'
+.L10:
+	.word	.L19-.L18
+.L18:
+	.half	3
+	.word	.L21-.L20
+.L20:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Infra/Platform/Tricore/Compilers/CompilerTasking.c',0,0,0,0,0
+.L21:
+	.byte	5,12,7,0,5,2
+	.word	.L3
+	.byte	3,60,1,5,1,9
+	.half	.L22-.L3
+	.byte	3,1,1,7,9
+	.half	.L12-.L22
+	.byte	0,1,1
+.L19:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_ranges'
+.L11:
+	.word	-1,.L3,0,.L12-.L3,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_loc'
+.L2:
+	.word	-1,.L3,0,.L13-.L3
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L23:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_C_Init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L23,.L3,.L13-.L3
+	; Module end

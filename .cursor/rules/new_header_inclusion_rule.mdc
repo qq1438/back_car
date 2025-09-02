@@ -1,0 +1,87 @@
+---
+description: 
+globs: *.h
+alwaysApply: false
+---
+# Rule: New Header File Setup
+
+## Context
+This rule applies whenever a new header file (e.g., `new_module.h`) is created within the project.
+
+## Instructions
+
+When a new header file is created, perform the following steps:
+
+1.  **Modify `[zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`:**
+    *   Add an `#include` directive for the newly created header file.
+    *   This directive should be placed in an appropriate section. Based on the existing structure of `[zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`, user-created headers are typically added under the `//=====================================================用户层======================================================` comment.
+    *   Example: If `my_feature.h` is created, add `#include "my_feature.h"` in that section.
+
+2.  **Modify the Newly Created Header File (e.g., `new_module.h`):**
+    *   **Include Guards:** Ensure the new header file has standard include guards to prevent multiple inclusions.
+        ```c
+        #ifndef __NEW_MODULE_H__ // Or a project-specific naming convention for guards, e.g., _NEW_MODULE_H_
+        #define __NEW_MODULE_H__
+
+        // Header content will go here
+
+        #endif /* __NEW_MODULE_H__ */
+        ```
+    *   **Include `zf_common_headfile.h`:** Add an `#include` directive for `[zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`. This is often one of the first includes.
+        ```c
+        #ifndef __NEW_MODULE_H__
+        #define __NEW_MODULE_H__
+
+        #include "zf_common_headfile.h" // Include the common header
+
+        // Other specific includes for this module, if any
+        // Declarations and definitions for new_module
+
+        #endif /* __NEW_MODULE_H__ */
+        ```
+
+## Include Order Considerations:
+
+*   **In `[zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`:**
+    *   Respect the existing grouping of headers (e.g., C standard libraries, SDK, common library, drivers, devices, user layer).
+    *   Add the new header to its logical group, most likely the "User Layer" (用户层) for custom application code.
+
+*   **In the New Header File:**
+    *   `#include "zf_common_headfile.h"` should generally be included early, as it provides common types, configurations, and potentially other foundational includes.
+    *   Any includes specific to the new module that are *not* already covered by `zf_common_headfile.h` can follow.
+
+## Example Scenario:
+
+Suppose a new header file `user_utils.h` is created, intended for general user-level utilities.
+
+1.  **Changes to `[zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)**:
+    ```c
+    // ... other includes ...
+
+    //=====================================================用户层======================================================
+    #include "image_deal.h"
+    #include "PID.h"
+    // ... other existing user includes ...
+    #include "user_utils.h" // <-- New include added here
+    //=====================================================用户层======================================================
+
+    // ... rest of the file ...
+    #endif
+    ```
+
+2.  **Content of the new `user_utils.h` (e.g., if placed in a `user/` directory):**
+    ```c
+    #ifndef __USER_UTILS_H__
+    #define __USER_UTILS_H__
+
+    #include "zf_common_headfile.h" // Essential common includes
+
+    // Function prototypes, type definitions, etc., for user_utils
+    // For example:
+    // void util_initialize_system(void);
+    // int util_calculate_crc(const char* data, int length);
+
+    #endif /* __USER_UTILS_H__ */
+    ```
+
+

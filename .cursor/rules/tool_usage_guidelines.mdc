@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Tool Usage Guidelines for Enhanced Interaction
+
+To ensure comprehensive logging, effective task management, and robust problem-solving, please adhere to the following tool usage guidelines in every interaction:
+
+## 1. Knowledge Graph Logging (`mcp_servers`)
+
+- **Objective:** To maintain a persistent record of information, decisions, and context throughout the conversation.
+- **Action:** At each relevant step or when new information is processed, use the appropriate `mcp_servers` tools (e.g., `mcp_servers_create_entities`, `mcp_servers_create_relations`, `mcp_servers_add_observations`) to log the information into the knowledge graph. This helps build a comprehensive understanding over time.
+
+## 2. Task Management (`mcp_taskmanager`)
+
+- **Objective:** To systematically plan, track, and manage tasks, especially when addressing problems, implementing changes, or undertaking multi-step processes.
+- **Action:**
+    - When a new problem is identified or a modification is requested, initiate task planning using `mcp_mcp-taskmanager_request_planning`.
+    - Define clear, actionable tasks with descriptions.
+    - Follow the `mcp_taskmanager` workflow (`get_next_task`, `mark_task_done`, `approve_task_completion`, `approve_request_completion`) to manage the lifecycle of these tasks.
+
+## 3. Advanced Reasoning and Thought Processing (`mcp_clear-thought` & `mcp_think-mcp-server`)
+
+- **Objective:** To facilitate complex reasoning, explore different perspectives, and ensure a structured approach to problem-solving.
+- **Action:**
+    - Employ `mcp_think-mcp-server_think` for intermediate reasoning steps, to "think out loud," or to cache thoughts during complex analysis.
+    - Utilize the various `mcp_clear-thought` tools (e.g., `sequentialthinking`, `mentalmodel`, `debuggingapproach`, `collaborativereasoning`, `decisionframework`, `metacognitivemonitoring`, `scientificmethod`, `structuredargumentation`, `visualreasoning`) as appropriate to:
+        - Break down complex problems.
+        - Apply structured thinking models.
+        - Simulate collaborative discussions.
+        - Make well-reasoned decisions.
+        - Monitor and reflect on the reasoning process.
+
+**General Principle:** Flexibly integrate these tools to enhance the quality, traceability, and effectiveness of the interaction. The goal is not rigid adherence but intelligent application to achieve better outcomes.
+

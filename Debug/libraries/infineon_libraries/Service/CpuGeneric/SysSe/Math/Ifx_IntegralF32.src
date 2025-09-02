@@ -1,0 +1,999 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc41100a --dep-file=libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\code -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Configurations -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_components -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_device -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_driver -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.src ../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c"
+	.compiler_name		"ctc"
+	;source	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_reset',code,cluster('Ifx_IntegralF32_reset')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_reset'
+	.align	2
+	
+	.global	Ifx_IntegralF32_reset
+; Function Ifx_IntegralF32_reset
+.L5:
+Ifx_IntegralF32_reset:	.type	func
+	mov	d15,#0
+.L105:
+	st.w	[a4],d15
+.L106:
+	mov	d15,#0
+.L107:
+	st.w	[a4]4,d15
+.L108:
+	ret
+.L59:
+	
+__Ifx_IntegralF32_reset_function_end:
+	.size	Ifx_IntegralF32_reset,__Ifx_IntegralF32_reset_function_end-Ifx_IntegralF32_reset
+.L34:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_init',code,cluster('Ifx_IntegralF32_init')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_init'
+	.align	2
+	
+	.global	Ifx_IntegralF32_init
+; Function Ifx_IntegralF32_init
+.L7:
+Ifx_IntegralF32_init:	.type	func
+	mul.f	d15,d4,d5
+.L85:
+	movh	d0,#16384
+.L86:
+	div.f	d15,d15,d0
+.L87:
+	st.w	[a4]8,d15
+.L88:
+	ret
+.L50:
+	
+__Ifx_IntegralF32_init_function_end:
+	.size	Ifx_IntegralF32_init,__Ifx_IntegralF32_init_function_end-Ifx_IntegralF32_init
+.L24:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_IntegralF32_step',code,cluster('Ifx_IntegralF32_step')
+	.sect	'.text.Ifx_IntegralF32.Ifx_IntegralF32_step'
+	.align	2
+	
+	.global	Ifx_IntegralF32_step
+; Function Ifx_IntegralF32_step
+.L9:
+Ifx_IntegralF32_step:	.type	func
+	ld.w	d15,[a4]4
+.L93:
+	add.f	d0,d4,d15
+.L94:
+	ld.w	d15,[a4]8
+.L95:
+	ld.w	d1,[a4]
+.L96:
+	madd.f	d15,d1,d0,d15
+.L97:
+	st.w	[a4],d15
+.L98:
+	st.w	[a4]4,d4
+.L99:
+	ld.w	d2,[a4]
+.L100:
+	j	.L2
+.L2:
+	ret
+.L56:
+	
+__Ifx_IntegralF32_step_function_end:
+	.size	Ifx_IntegralF32_step,__Ifx_IntegralF32_step_function_end-Ifx_IntegralF32_step
+.L29:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_reset',code,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_reset'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_reset
+; Function Ifx_ClpxFloat32_Integral_reset
+.L11:
+Ifx_ClpxFloat32_Integral_reset:	.type	func
+	mov	d15,#0
+.L138:
+	st.w	[a4],d15
+.L139:
+	mov	d15,#0
+.L140:
+	st.w	[a4]4,d15
+.L141:
+	mov	d15,#0
+.L142:
+	st.w	[a4]8,d15
+.L143:
+	mov	d15,#0
+.L144:
+	st.w	[a4]12,d15
+.L145:
+	ret
+.L70:
+	
+__Ifx_ClpxFloat32_Integral_reset_function_end:
+	.size	Ifx_ClpxFloat32_Integral_reset,__Ifx_ClpxFloat32_Integral_reset_function_end-Ifx_ClpxFloat32_Integral_reset
+.L49:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_init',code,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_init'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_init
+; Function Ifx_ClpxFloat32_Integral_init
+.L13:
+Ifx_ClpxFloat32_Integral_init:	.type	func
+	mov.aa	a15,a4
+.L73:
+	mov	d15,d4
+.L74:
+	mov	d8,d5
+.L76:
+	mov.aa	a4,a15
+	call	Ifx_ClpxFloat32_Integral_reset
+.L72:
+	mul.f	d15,d15,d8
+.L75:
+	movh	d0,#16384
+.L113:
+	div.f	d15,d15,d0
+.L114:
+	st.w	[a15]16,d15
+.L115:
+	ret
+.L61:
+	
+__Ifx_ClpxFloat32_Integral_init_function_end:
+	.size	Ifx_ClpxFloat32_Integral_init,__Ifx_ClpxFloat32_Integral_init_function_end-Ifx_ClpxFloat32_Integral_init
+.L39:
+	; End of function
+	
+	.sdecl	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_step',code,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.text.Ifx_IntegralF32.Ifx_ClpxFloat32_Integral_step'
+	.align	2
+	
+	.global	Ifx_ClpxFloat32_Integral_step
+; Function Ifx_ClpxFloat32_Integral_step
+.L15:
+Ifx_ClpxFloat32_Integral_step:	.type	func
+	ld.w	d15,[a4]8
+.L120:
+	add.f	d0,d4,d15
+.L121:
+	ld.w	d15,[a4]16
+.L122:
+	ld.w	d1,[a4]
+.L123:
+	madd.f	d15,d1,d0,d15
+.L124:
+	st.w	[a4],d15
+.L125:
+	ld.w	d15,[a4]12
+.L126:
+	add.f	d0,d5,d15
+.L127:
+	ld.w	d15,[a4]16
+.L128:
+	ld.w	d1,[a4]4
+.L129:
+	madd.f	d15,d1,d0,d15
+.L130:
+	st.w	[a4]4,d15
+.L131:
+	st.d	[a4]8,e4
+.L132:
+	ld.d	e2,[a4]0
+.L133:
+	j	.L3
+.L3:
+	ret
+.L67:
+	
+__Ifx_ClpxFloat32_Integral_step_function_end:
+	.size	Ifx_ClpxFloat32_Integral_step,__Ifx_ClpxFloat32_Integral_step_function_end-Ifx_ClpxFloat32_Integral_step
+.L44:
+	; End of function
+	
+	.calls	'Ifx_ClpxFloat32_Integral_init','Ifx_ClpxFloat32_Integral_reset'
+	.calls	'Ifx_IntegralF32_reset','',0
+	.calls	'Ifx_IntegralF32_init','',0
+	.calls	'Ifx_IntegralF32_step','',0
+	.calls	'Ifx_ClpxFloat32_Integral_reset','',0
+	.calls	'Ifx_ClpxFloat32_Integral_init','',0
+	.calls	'Ifx_ClpxFloat32_Integral_step','',0
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L17:
+	.word	1290
+	.half	3
+	.word	.L18
+	.byte	4
+.L16:
+	.byte	1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L19
+	.byte	2,1,1,3
+	.word	230
+	.byte	4
+	.byte	'Ifx__jump_and_link',0,3,1,61,17,1,1,5
+	.byte	'fun',0,1,61,43
+	.word	233
+	.byte	6,0,7
+	.byte	'__fract',0,4,128,1
+.L53:
+	.byte	7
+	.byte	'float',0,4,4,8
+	.byte	'Ifx__float_to_fract',0,3,1,152,2,18
+	.word	278
+	.byte	1,1,5
+	.byte	'a',0,1,152,2,44
+	.word	290
+	.byte	6,0,7
+	.byte	'unsigned long long int',0,8,7,9
+	.byte	'void',0,3
+	.word	370
+	.byte	8
+	.byte	'__ld64',0,3,2,135,1,19
+	.word	344
+	.byte	1,1,5
+	.byte	'addr',0,2,135,1,32
+	.word	376
+	.byte	6,0,4
+	.byte	'__st64',0,3,2,143,1,17,1,1,5
+	.byte	'addr',0,2,143,1,30
+	.word	376
+	.byte	5
+	.byte	'value',0,2,143,1,43
+	.word	344
+	.byte	6,0
+.L66:
+	.byte	10,4,61,9,8,11
+	.byte	'real',0
+	.word	290
+	.byte	4,2,35,0,11
+	.byte	'imag',0
+	.word	290
+	.byte	4,2,35,4,0,12
+	.word	462
+	.byte	3
+	.word	496
+	.byte	8
+	.byte	'IFX_Cf32_dot',0,3,3,85,20
+	.word	290
+	.byte	1,1,5
+	.byte	'b',0,3,85,49
+	.word	501
+	.byte	6,0,8
+	.byte	'IFX_Cf32_mag',0,3,3,91,20
+	.word	290
+	.byte	1,1,5
+	.byte	'c',0,3,91,49
+	.word	501
+	.byte	13,6,0,0,3
+	.word	462
+	.byte	4
+	.byte	'IFX_Cf32_set',0,3,3,125,17,1,1,5
+	.byte	'a',0,3,125,40
+	.word	580
+	.byte	5
+	.byte	're',0,3,125,51
+	.word	290
+	.byte	5
+	.byte	'im',0,3,125,63
+	.word	290
+	.byte	6,0,14
+	.word	238
+	.byte	15
+	.word	264
+	.byte	6,0,14
+	.word	299
+	.byte	15
+	.word	331
+	.byte	6,0,14
+	.word	381
+	.byte	15
+	.word	400
+	.byte	6,0,14
+	.word	416
+	.byte	15
+	.word	431
+	.byte	15
+	.word	445
+	.byte	6,0,14
+	.word	506
+	.byte	15
+	.word	530
+	.byte	6,0,14
+	.word	542
+	.byte	15
+	.word	566
+	.byte	13,16
+	.word	506
+	.byte	15
+	.word	530
+	.byte	17
+	.word	540
+	.byte	0,6,0,0,14
+	.word	585
+	.byte	15
+	.word	605
+	.byte	15
+	.word	615
+	.byte	15
+	.word	626
+	.byte	6,0,10,5,57,9,12,11
+	.byte	'uk',0
+	.word	290
+	.byte	4,2,35,0,11
+	.byte	'ik',0
+	.word	290
+	.byte	4,2,35,4,11
+	.byte	'delta',0
+	.word	290
+	.byte	4,2,35,8,0
+.L51:
+	.byte	3
+	.word	756
+	.byte	10,5,65,9,20,11
+	.byte	'uk',0
+	.word	462
+	.byte	8,2,35,0,11
+	.byte	'ik',0
+	.word	462
+	.byte	8,2,35,8,11
+	.byte	'delta',0
+	.word	290
+	.byte	4,2,35,16,0
+.L62:
+	.byte	3
+	.word	806
+	.byte	7
+	.byte	'short int',0,2,5,18
+	.byte	'__wchar_t',0,6,1,1
+	.word	856
+	.byte	7
+	.byte	'unsigned int',0,4,7,18
+	.byte	'__size_t',0,6,1,1
+	.word	887
+	.byte	7
+	.byte	'int',0,4,5,18
+	.byte	'__ptrdiff_t',0,6,1,1
+	.word	920
+	.byte	19,1,3
+	.word	947
+	.byte	18
+	.byte	'__codeptr',0,6,1,1
+	.word	949
+	.byte	7
+	.byte	'unsigned char',0,1,8,18
+	.byte	'uint8',0,7,105,29
+	.word	972
+	.byte	7
+	.byte	'unsigned short int',0,2,7,18
+	.byte	'uint16',0,7,109,29
+	.word	1003
+	.byte	7
+	.byte	'unsigned long int',0,4,7,18
+	.byte	'uint32',0,7,113,29
+	.word	1040
+	.byte	18
+	.byte	'uint64',0,7,118,29
+	.word	344
+	.byte	18
+	.byte	'sint16',0,7,126,29
+	.word	856
+	.byte	7
+	.byte	'long int',0,4,5,18
+	.byte	'sint32',0,7,131,1,29
+	.word	1106
+	.byte	7
+	.byte	'long long int',0,8,5,18
+	.byte	'sint64',0,7,138,1,29
+	.word	1134
+	.byte	18
+	.byte	'float32',0,7,167,1,29
+	.word	290
+	.byte	18
+	.byte	'pvoid',0,4,57,28
+	.word	376
+	.byte	18
+	.byte	'cfloat32',0,4,65,3
+	.word	462
+	.byte	18
+	.byte	'Ifx_TickTime',0,4,79,28
+	.word	1134
+	.byte	18
+	.byte	'Ifx_IntegralF32',0,5,62,3
+	.word	756
+	.byte	18
+	.byte	'Ifx_ClpxFloat32_Integral',0,5,70,3
+	.word	806
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L18:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,21,0,54,15,39,12,0,0,3,15,0,73,19,0,0,4,46,1,3,8,32,13
+	.byte	58,15,59,15,57,15,54,15,39,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,11,0,0,0,7,36,0,3,8,11,15,62
+	.byte	15,0,0,8,46,1,3,8,32,13,58,15,59,15,57,15,73,19,54,15,39,12,0,0,9,59,0,3,8,0,0,10,19,1,58,15,59,15,57
+	.byte	15,11,15,0,0,11,13,0,3,8,73,19,11,15,56,9,0,0,12,38,0,73,19,0,0,13,11,1,0,0,14,46,1,49,19,0,0,15,5,0,49
+	.byte	19,0,0,16,29,1,49,19,0,0,17,11,0,49,19,0,0,18,22,0,3,8,58,15,59,15,57,15,73,19,0,0,19,21,0,54,15,0,0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L19:
+	.word	.L78-.L77
+.L77:
+	.half	3
+	.word	.L80-.L79
+.L79:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_IntrinsicsTasking.h',0
+	.byte	0,0,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\IfxCpu_Intrinsics.h',0
+	.byte	0,0,0
+	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_Cf32.h',0,0,0,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Ifx_Types.h',0
+	.byte	0,0,0
+	.byte	'..\\libraries\\infineon_libraries\\Service\\CpuGeneric\\SysSe\\Math\\Ifx_IntegralF32.h',0,0,0,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\Cpu\\Std\\Platform_Types.h',0
+	.byte	0,0,0,0
+.L80:
+.L78:
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_info'
+.L20:
+	.word	333
+	.half	3
+	.word	.L21
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L23,.L22
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_init',0,1,54,6,1,1,1
+	.word	.L7,.L50,.L6
+	.byte	4
+	.byte	'ci',0,1,54,44
+	.word	.L51,.L52
+	.byte	4
+	.byte	'gain',0,1,54,56
+	.word	.L53,.L54
+	.byte	4
+	.byte	'Ts',0,1,54,70
+	.word	.L53,.L55
+	.byte	5
+	.word	.L7,.L50
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_abbrev'
+.L21:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_line'
+.L22:
+	.word	.L82-.L81
+.L81:
+	.half	3
+	.word	.L84-.L83
+.L83:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L84:
+	.byte	5,22,7,0,5,2
+	.word	.L7
+	.byte	3,55,1,5,29,9
+	.half	.L85-.L7
+	.byte	1,5,27,9
+	.half	.L86-.L85
+	.byte	1,5,15,9
+	.half	.L87-.L86
+	.byte	1,5,1,9
+	.half	.L88-.L87
+	.byte	3,1,1,7,9
+	.half	.L24-.L88
+	.byte	0,1,1
+.L82:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_ranges'
+.L23:
+	.word	-1,.L7,0,.L24-.L7,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_info'
+.L25:
+	.word	320
+	.half	3
+	.word	.L26
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L28,.L27
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_step',0,1,60,9
+	.word	.L53
+	.byte	1,1,1
+	.word	.L9,.L56,.L8
+	.byte	4
+	.byte	'ci',0,1,60,47
+	.word	.L51,.L57
+	.byte	4
+	.byte	'ik',0,1,60,59
+	.word	.L53,.L58
+	.byte	5
+	.word	.L9,.L56
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_abbrev'
+.L26:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_line'
+.L27:
+	.word	.L90-.L89
+.L89:
+	.half	3
+	.word	.L92-.L91
+.L91:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L92:
+	.byte	5,31,7,0,5,2
+	.word	.L9
+	.byte	3,61,1,5,27,9
+	.half	.L93-.L9
+	.byte	1,5,41,9
+	.half	.L94-.L93
+	.byte	1,5,16,9
+	.half	.L95-.L94
+	.byte	1,5,21,9
+	.half	.L96-.L95
+	.byte	1,5,12,9
+	.half	.L97-.L96
+	.byte	1,9
+	.half	.L98-.L97
+	.byte	3,1,1,5,14,9
+	.half	.L99-.L98
+	.byte	3,2,1,5,5,9
+	.half	.L100-.L99
+	.byte	1,5,1,9
+	.half	.L2-.L100
+	.byte	3,1,1,7,9
+	.half	.L29-.L2
+	.byte	0,1,1
+.L90:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_ranges'
+.L28:
+	.word	-1,.L9,0,.L29-.L9,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_info'
+.L30:
+	.word	302
+	.half	3
+	.word	.L31
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L33,.L32
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_IntegralF32_reset',0,1,47,6,1,1,1
+	.word	.L5,.L59,.L4
+	.byte	4
+	.byte	'ci',0,1,47,45
+	.word	.L51,.L60
+	.byte	5
+	.word	.L5,.L59
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_abbrev'
+.L31:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_line'
+.L32:
+	.word	.L102-.L101
+.L101:
+	.half	3
+	.word	.L104-.L103
+.L103:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L104:
+	.byte	5,14,7,0,5,2
+	.word	.L5
+	.byte	3,48,1,5,12,9
+	.half	.L105-.L5
+	.byte	1,5,14,9
+	.half	.L106-.L105
+	.byte	3,1,1,5,12,9
+	.half	.L107-.L106
+	.byte	1,5,1,9
+	.half	.L108-.L107
+	.byte	3,1,1,7,9
+	.half	.L34-.L108
+	.byte	0,1,1
+.L102:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_ranges'
+.L33:
+	.word	-1,.L5,0,.L34-.L5,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_info'
+.L35:
+	.word	342
+	.half	3
+	.word	.L36
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L38,.L37
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_init',0,1,78,6,1,1,1
+	.word	.L13,.L61,.L12
+	.byte	4
+	.byte	'ci',0,1,78,62
+	.word	.L62,.L63
+	.byte	4
+	.byte	'gain',0,1,78,74
+	.word	.L53,.L64
+	.byte	4
+	.byte	'Ts',0,1,78,88
+	.word	.L53,.L65
+	.byte	5
+	.word	.L13,.L61
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_abbrev'
+.L36:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_line'
+.L37:
+	.word	.L110-.L109
+.L109:
+	.half	3
+	.word	.L112-.L111
+.L111:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L112:
+	.byte	5,6,7,0,5,2
+	.word	.L13
+	.byte	3,205,0,1,5,36,9
+	.half	.L76-.L13
+	.byte	3,2,1,5,22,9
+	.half	.L72-.L76
+	.byte	3,1,1,5,29,9
+	.half	.L75-.L72
+	.byte	1,5,27,9
+	.half	.L113-.L75
+	.byte	1,5,15,9
+	.half	.L114-.L113
+	.byte	1,5,1,9
+	.half	.L115-.L114
+	.byte	3,1,1,7,9
+	.half	.L39-.L115
+	.byte	0,1,1
+.L110:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_ranges'
+.L38:
+	.word	-1,.L13,0,.L39-.L13,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_info'
+.L40:
+	.word	329
+	.half	3
+	.word	.L41
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L43,.L42
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_step',0,1,85,10
+	.word	.L66
+	.byte	1,1,1
+	.word	.L15,.L67,.L14
+	.byte	4
+	.byte	'ci',0,1,85,66
+	.word	.L62,.L68
+	.byte	4
+	.byte	'ik',0,1,85,79
+	.word	.L66,.L69
+	.byte	5
+	.word	.L15,.L67
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_abbrev'
+.L41:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_line'
+.L42:
+	.word	.L117-.L116
+.L116:
+	.half	3
+	.word	.L119-.L118
+.L118:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L119:
+	.byte	5,50,7,0,5,2
+	.word	.L15
+	.byte	3,214,0,1,5,42,9
+	.half	.L120-.L15
+	.byte	1,5,61,9
+	.half	.L121-.L120
+	.byte	1,5,25,9
+	.half	.L122-.L121
+	.byte	1,5,31,9
+	.half	.L123-.L122
+	.byte	1,5,17,9
+	.half	.L124-.L123
+	.byte	1,5,50,9
+	.half	.L125-.L124
+	.byte	3,1,1,5,42,9
+	.half	.L126-.L125
+	.byte	1,5,61,9
+	.half	.L127-.L126
+	.byte	1,5,25,9
+	.half	.L128-.L127
+	.byte	1,5,31,9
+	.half	.L129-.L128
+	.byte	1,5,17,9
+	.half	.L130-.L129
+	.byte	1,9
+	.half	.L131-.L130
+	.byte	3,1,1,5,14,9
+	.half	.L132-.L131
+	.byte	3,2,1,5,5,9
+	.half	.L133-.L132
+	.byte	1,5,1,9
+	.half	.L3-.L133
+	.byte	3,1,1,7,9
+	.half	.L44-.L3
+	.byte	0,1,1
+.L117:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_ranges'
+.L43:
+	.word	-1,.L15,0,.L44-.L15,0,0
+	.sdecl	'.debug_info',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_info'
+.L45:
+	.word	311
+	.half	3
+	.word	.L46
+	.byte	4,1
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L48,.L47
+	.byte	2
+	.word	.L16
+	.byte	3
+	.byte	'Ifx_ClpxFloat32_Integral_reset',0,1,69,6,1,1,1
+	.word	.L11,.L70,.L10
+	.byte	4
+	.byte	'ci',0,1,69,63
+	.word	.L62,.L71
+	.byte	5
+	.word	.L11,.L70
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_abbrev'
+.L46:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_line'
+.L47:
+	.word	.L135-.L134
+.L134:
+	.half	3
+	.word	.L137-.L136
+.L136:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/infineon_libraries/Service/CpuGeneric/SysSe/Math/Ifx_IntegralF32.c',0,0,0,0,0
+.L137:
+	.byte	5,19,7,0,5,2
+	.word	.L11
+	.byte	3,198,0,1,5,17,9
+	.half	.L138-.L11
+	.byte	1,5,19,9
+	.half	.L139-.L138
+	.byte	3,1,1,5,17,9
+	.half	.L140-.L139
+	.byte	1,5,19,9
+	.half	.L141-.L140
+	.byte	3,1,1,5,17,9
+	.half	.L142-.L141
+	.byte	1,5,19,9
+	.half	.L143-.L142
+	.byte	3,1,1,5,17,9
+	.half	.L144-.L143
+	.byte	1,5,1,9
+	.half	.L145-.L144
+	.byte	3,1,1,7,9
+	.half	.L49-.L145
+	.byte	0,1,1
+.L135:
+	.sdecl	'.debug_ranges',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_ranges'
+.L48:
+	.word	-1,.L11,0,.L49-.L11,0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_loc'
+.L12:
+	.word	-1,.L13,0,.L61-.L13
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L65:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	85
+	.word	.L76-.L13,.L61-.L13
+	.half	1
+	.byte	88
+	.word	0,0
+.L63:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	100
+	.word	.L73-.L13,.L61-.L13
+	.half	1
+	.byte	111
+	.word	0,0
+.L64:
+	.word	-1,.L13,0,.L72-.L13
+	.half	1
+	.byte	84
+	.word	.L74-.L13,.L75-.L13
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_loc'
+.L10:
+	.word	-1,.L11,0,.L70-.L11
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L71:
+	.word	-1,.L11,0,.L70-.L11
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_loc'
+.L14:
+	.word	-1,.L15,0,.L67-.L15
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L68:
+	.word	-1,.L15,0,.L67-.L15
+	.half	1
+	.byte	100
+	.word	0,0
+.L69:
+	.word	-1,.L15,0,.L67-.L15
+	.half	2
+	.byte	144,34
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_loc'
+.L6:
+	.word	-1,.L7,0,.L50-.L7
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L55:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	85
+	.word	0,0
+.L52:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	100
+	.word	0,0
+.L54:
+	.word	-1,.L7,0,.L50-.L7
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_loc'
+.L4:
+	.word	-1,.L5,0,.L59-.L5
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L60:
+	.word	-1,.L5,0,.L59-.L5
+	.half	1
+	.byte	100
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_loc'
+.L8:
+	.word	-1,.L9,0,.L56-.L9
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L57:
+	.word	-1,.L9,0,.L56-.L9
+	.half	1
+	.byte	100
+	.word	0,0
+.L58:
+	.word	-1,.L9,0,.L56-.L9
+	.half	1
+	.byte	84
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L146:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L5,.L59-.L5
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_init')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L7,.L50-.L7
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_IntegralF32_step')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L9,.L56-.L9
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_reset')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L11,.L70-.L11
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_init')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L146,.L13,.L61-.L13
+	.sdecl	'.debug_frame',debug,cluster('Ifx_ClpxFloat32_Integral_step')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L146,.L15,.L67-.L15
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	; Module end

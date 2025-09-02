@@ -1,0 +1,119 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Guide: TC26B Back Car Codebase
+
+## 1. Project Overview
+This project is an embedded application based on the Infineon TC26B microcontroller, presumably related to rear vehicle functions (e.g., reverse assist, rear-view camera processing), named "Back_Car_V1.4".
+
+## 2. Key Directory Structure
+- `code/`: Stores C source files and header files for core application logic modules. For example, `[code/kalman_filter.c](mdc:code/kalman_filter.c)` implements a Kalman filter.
+- `libraries/`: Contains various library files.
+    - `infineon_libraries/`: Includes official Infineon low-level libraries (iLLD - Infineon Low Level Drivers) and service layer code for the TC26B chip.
+    - `zf_common/`: Contains common project utilities, macro definitions, type definitions, and the crucial central header file `[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`.
+    - `zf_components/`: May contain reusable software components or middleware.
+    - `zf_device/`: Stores drivers for specific hardware peripherals (e.g., sensors, displays).
+    - `zf_driver/`: Contains further encapsulation or abstraction of underlying hardware drivers.
+- `user/`: Stores user-layer code, typically top-level application logic, main program entry points, and user-defined modules referenced in `[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`.
+- `Debug/`: Contains output files generated during compilation and build processes (e.g., `.elf`, `.hex`, map files).
+- `.settings/`: Usually contains IDE-specific project configurations (e.g., for Eclipse).
+
+## 3. Core Header File: `zf_common_headfile.h`
+`[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)` is the "Swiss Army knife" of this project. It is a central aggregate header file that includes almost all other necessary standard libraries, SDK libraries, custom libraries, and user module header files.
+
+**Importance and Role**:
+- **Unified Dependency Management**: Most `.c` files include this file (or a custom header that already includes it) to get almost all required declarations and definitions.
+- **Simplified Includes**: Avoids manually including a large number of individual header files in each module.
+- **Project Overview**: The include structure of this file also reflects the project's layering and module division.
+
+**Structure**:
+The file internally groups included header files clearly using specific comments, for example:
+```c
+//===================================================C Standard Libraries===================================================
+// ... stdio.h, math.h etc.
+//===================================================Chip SDK Low Level===================================================
+// ... IfxCpu.h, IfxPort.h etc.
+//====================================================Open Source Library Common====================================================
+// ... zf_common_typedef.h etc.
+//===================================================Chip Driver Encapsulation===================================================
+// ... zf_driver_adc.h, zf_driver_pwm.h etc.
+//===================================================Peripheral Device Drivers===================================================
+// ... zf_device_camera.h, zf_device_oled.h etc.
+//====================================================User Layer======================================================
+// ... image_deal.h, PID.h, All_Init.h etc. // <--- New user module header files are typically added here
+```
+
+## 4. Adding New Modules/Features
+
+1.  **File Creation Location**:
+    *   New `.c` source files are usually placed in the `code/` or `user/` directory.
+    *   Corresponding `.h` header files are also placed in the same directory or a respective `include` subdirectory (if the project uses such a structure). Based on the current structure, `.h` files are in the same directory as `.c` files.
+
+2.  **Writing Header Files (`.h`)**:
+    *   **Include Guards**: Standard include guard macros must be used to prevent multiple inclusions of the header file.
+        ```c
+        #ifndef _MY_NEW_MODULE_H_ // Follow the project's existing naming style, e.g., _FILENAME_H_
+        #define _MY_NEW_MODULE_H_
+
+        // (Recommended) Include the central header file if this module requires broad project-level definitions
+        // #include "zf_common_headfile.h" // Note the path; if this new header will itself be included by zf_common_headfile.h, this can be omitted or handled carefully to avoid circular include risks.
+
+        // If not directly including zf_common_headfile.h, then necessary other headers are needed
+        // e.g., if the new module is in code/ and zf_common_headfile.h is in libraries/zf_common/
+        // it might require `#include "../libraries/zf_common/zf_common_headfile.h"` or rely on compiler include path settings.
+
+        // Module-related function declarations, struct definitions, macro definitions, etc.
+
+        #endif // _MY_NEW_MODULE_H_
+        ```
+    *   **Referencing `zf_common_headfile.h`**:
+        *   If the new module's header file will be added to `[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)` (which is common practice), then the new header file itself **should not** `#include "zf_common_headfile.h"` to avoid circular dependencies. It will get all necessary context through `zf_common_headfile.h`.
+        *   If the new module is an independent unit not included by `zf_common_headfile.h`, its header file should `#include "zf_common_headfile.h"` or other required base headers itself.
+
+3.  **Writing Source Files (`.c`)**:
+    *   Typically, include its corresponding header file first.
+        ```c
+        #include "my_new_module.h" // Assuming my_new_module.h is handled as described above
+
+        // Module's function implementations, etc.
+        // Types and functions indirectly included via zf_common_headfile.h can be used directly here.
+        ```
+
+4.  **Updating `zf_common_headfile.h` (Key Step)**:
+    *   Open `[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`.
+    *   Find the `//=====================================================User Layer======================================================` comment block.
+    *   Within this area, add the `#include` directive for the newly created header file.
+        ```c
+        //=====================================================User Layer======================================================
+        #include "image_deal.h"
+        #include "PID.h"
+        // ... (other existing user layer includes)
+        #include "my_new_module.h" // <-- New header file added here. Ensure filename and path are correct.
+        //=====================================================User Layer======================================================
+        ```
+    *   **Path Issues**: From existing includes in `zf_common_headfile.h` (e.g., `#include "image_deal.h"`), it appears the compiler is configured with include paths allowing direct filename references for headers in `user/` or `code/` directories.
+
+## 5. Coding Conventions (Inferred from `kalman_filter.c` and `zf_common_headfile.h`)
+- **Header Guards**: Use `#ifndef _FILENAME_H_` / `#define _FILENAME_H_` / `#endif`.
+- **Type Definitions**: Prefers fixed-width integer types from `stdint.h`, such as `int32_t`, `int64_t`.
+- **Naming Style**:
+    - Function names: Typically `PREFIX_VerbNoun` or `Component_VerbNoun` (e.g., `KF_Init`, `KF_Update`, `exposure_adjust_handler`).
+    - Struct type names: CamelCase or PascalCase (e.g., `KalmanFilter`).
+    - Struct members: In the `KalmanFilter` example, members are uppercase (`Q, R, P, X, K`).
+    - Macro definitions/constants: All uppercase, underscore-separated (e.g., `KF_SCALE`).
+- **Comments**: Use Doxygen-compatible comment blocks (like `/** ... */`) or standard block comments before function declarations and definitions.
+
+## 6. Compilation and Build
+- The project uses `.cproject` and `.project` files, indicating it likely uses an Eclipse-based IDE (e.g., AURIX? Development Studio or DAVE?).
+- The linker script is `[Lcf_Tasking_Tricore_Tc.lsl](mdc:Lcf_Tasking_Tricore_Tc.lsl)`, which is a standard linker configuration file for the Infineon Tricore architecture using the TASKING compiler suite.
+- The presence of `.launch` files like `[E01_gpio_demo.launch](mdc:E01_gpio_demo.launch)` suggests Eclipse launch configurations for debugging sessions or run configurations.
+
+## 7. Other Notes
+- `[删除临时文件.bat](mdc:删除临时文件.bat)` (Delete Temporary Files.bat): A batch script, likely for cleaning up temporary files generated by the build.
+- `[尽量不要使用的引脚.txt](mdc:尽量不要使用的引脚.txt)` (Pins to Avoid.txt) and `[推荐IO分配.txt](mdc:推荐IO分配.txt)` (Recommended IO Allocation.txt): These files provide important guidance on hardware pin allocation and should be carefully consulted during development.
+- Be cautious when modifying `[libraries/zf_common/zf_common_headfile.h](mdc:libraries/zf_common/zf_common_headfile.h)`. Incorrect modifications or order can lead to project-wide compilation failures or hard-to-trace linking errors.
+- When adding or modifying code, try to follow the existing code style and organizational structure of the project.
+
+

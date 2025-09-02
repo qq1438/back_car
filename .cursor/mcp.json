@@ -1,0 +1,49 @@
+{
+    "mcpServers": {
+      "mcp-taskmanager": {
+        "command": "node",
+        "args": [
+          "D:\\Claude_MCP\\mcp-taskmanager\\dist\\index.js"
+        ]
+      },
+      "clear-thought": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "npx",
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@waldzellai/clear-thought",
+          "--key",
+          "d02999de-6d62-4160-b353-e6ca9e931e5b"
+        ]
+      },
+      "think-mcp-server": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "npx",
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@PhillipRt/think-mcp-server",
+          "--key",
+          "d02999de-6d62-4160-b353-e6ca9e931e5b"
+        ]
+      },
+      "servers": {
+        "command": "cmd",
+        "args": [
+          "/c",
+          "npx",
+          "-y",
+          "@smithery/cli@latest",
+          "run",
+          "@jlia0/servers",
+          "--key",
+          "d02999de-6d62-4160-b353-e6ca9e931e5b"
+        ]
+      }
+    }
+  }

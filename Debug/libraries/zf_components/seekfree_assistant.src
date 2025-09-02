@@ -1,0 +1,3442 @@
+	; Module start
+	.compiler_version	"TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler v1.1r8 Build 22011964"
+	.compiler_invocation	"ctc -f cc5584a --dep-file=libraries/zf_components/seekfree_assistant.d -c99 --fp-model=3cflnrSTz -D__CPU__=tc26xb -D__CPU_TC26XB__ --core=tc1.6.x --fp-model=+float -D__CPU__=tc26xb -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\code -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Configurations -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Platform\\\\Tricore\\\\Compilers -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Infra\\\\Sfr\\\\TC26B\\\\_Reg -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\If\\\\Ccu6If -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\StdIf -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Bsp -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\SysSe\\\\Math -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\Service\\\\CpuGeneric\\\\_Utilities -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Asc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Asclin\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Ccu6\\\\Timer -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\CStart -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Irq -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Dma -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Dma\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Flash\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12 -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\IncrEnc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gpt12\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Atom\\\\Pwm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Gtm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Mtu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Port\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\SpiMaster -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Qspi\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Scu\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Src\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Stm\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Adc -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Vadc\\\\Std -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Impl -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_Lib\\\\DataHandling -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\_PinMap -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_components -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_device -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_driver -IF:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\user -g2 -w544 -w557 -t4 --language=+volatile -N0 -O0 -Y0 -Z0 --compact-max-size=200 --misrac-version=2004 -o libraries/zf_components/seekfree_assistant.src ../libraries/zf_components/seekfree_assistant.c"
+	.compiler_name		"ctc"
+	;source	'../libraries/zf_components/seekfree_assistant.c'
+
+	
+$TC16X
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_sum',code,cluster('seekfree_assistant_sum')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_sum'
+	.align	2
+	
+; Function seekfree_assistant_sum
+.L56:
+seekfree_assistant_sum:	.type	func
+	mov	d2,#0
+.L197:
+	j	.L2
+.L3:
+	add	d4,#-1
+.L533:
+	ld.bu	d15,[a4]
+.L534:
+	add	d2,d15
+.L198:
+	extr.u	d2,d2,#0,#8
+.L199:
+	add.a	a4,#1
+.L2:
+	jne	d4,#0,.L3
+.L535:
+	j	.L4
+.L4:
+	ret
+.L170:
+	
+__seekfree_assistant_sum_function_end:
+	.size	seekfree_assistant_sum,__seekfree_assistant_sum_function_end-seekfree_assistant_sum
+.L104:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_camera_data_send',code,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_camera_data_send'
+	.align	2
+	
+	.global	seekfree_assistant_camera_data_send
+; Function seekfree_assistant_camera_data_send
+.L58:
+seekfree_assistant_camera_data_send:	.type	func
+	mov	d10,d4
+.L203:
+	mov.aa	a12,a4
+.L204:
+	mov	d11,d6
+.L205:
+	mov	d12,d7
+.L207:
+	mov	d8,#0
+.L208:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L540:
+	mov	d15,#170
+.L541:
+	st.b	[a15],d15
+.L542:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L543:
+	mov	d15,#2
+.L544:
+	st.b	[a15]1,d15
+.L545:
+	jz.a	a12,.L5
+.L546:
+	mov	d0,#0
+.L547:
+	j	.L6
+.L5:
+	mov	d0,#1
+.L6:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L548:
+	sha	d15,d10,#5
+.L549:
+	sha	d0,#4
+.L550:
+	or	d15,d0
+.L551:
+	or	d15,d5
+.L552:
+	st.b	[a15]2,d15
+.L553:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L554:
+	mov	d15,#8
+.L555:
+	st.b	[a15]3,d15
+.L556:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L557:
+	st.h	[a15]4,d11
+.L558:
+	movh.a	a15,#@his(seekfree_assistant_camera_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_data)
+.L559:
+	st.h	[a15]6,d12
+.L560:
+	movh.a	a15,#@his(seekfree_assistant_transfer_callback)
+	lea	a15,[a15]@los(seekfree_assistant_transfer_callback)
+	ld.a	a15,[a15]
+.L561:
+	movh.a	a4,#@his(seekfree_assistant_camera_data)
+.L202:
+	lea	a4,[a4]@los(seekfree_assistant_camera_data)
+.L562:
+	mov	d4,#8
+.L201:
+	calli	a15
+.L200:
+	mov	d15,#1
+	jeq	d15,d10,.L7
+.L563:
+	mov	d15,#2
+	jeq	d15,d10,.L8
+.L564:
+	mov	d15,#3
+	jeq	d15,d10,.L9
+	j	.L10
+.L7:
+	mul	d11,d12
+.L206:
+	mov	d15,#8
+.L565:
+	div	e8,d11,d15
+.L566:
+	j	.L11
+.L8:
+	mul	d8,d11,d12
+.L567:
+	j	.L12
+.L9:
+	mul	d11,d12
+.L209:
+	mul	d8,d11,#2
+.L568:
+	j	.L13
+.L10:
+.L13:
+.L12:
+.L11:
+	mov.a	a15,#0
+.L569:
+	jeq.a	a15,a12,.L14
+.L570:
+	movh.a	a15,#@his(seekfree_assistant_transfer_callback)
+	lea	a15,[a15]@los(seekfree_assistant_transfer_callback)
+	ld.a	a15,[a15]
+.L571:
+	mov.aa	a4,a12
+.L210:
+	mov	d4,d8
+.L211:
+	calli	a15
+.L14:
+	ret
+.L175:
+	
+__seekfree_assistant_camera_data_send_function_end:
+	.size	seekfree_assistant_camera_data_send,__seekfree_assistant_camera_data_send_function_end-seekfree_assistant_camera_data_send
+.L109:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_camera_dot_send',code,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_camera_dot_send'
+	.align	2
+	
+	.global	seekfree_assistant_camera_dot_send
+; Function seekfree_assistant_camera_dot_send
+.L60:
+seekfree_assistant_camera_dot_send:	.type	func
+	mov.aa	a12,a4
+.L213:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L576:
+	ld.hu	d8,[a15]4
+.L214:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L577:
+	ld.bu	d15,[a15]2
+.L578:
+	jz.t	d15:5,.L15
+.L579:
+	mul	d15,d8,#2
+	extr.u	d8,d15,#0,#16
+.L15:
+	movh.a	a15,#@his(seekfree_assistant_transfer_callback)
+	lea	a15,[a15]@los(seekfree_assistant_transfer_callback)
+	ld.a	a15,[a15]
+.L580:
+	movh.a	a4,#@his(seekfree_assistant_camera_dot_data)
+.L212:
+	lea	a4,[a4]@los(seekfree_assistant_camera_dot_data)
+.L581:
+	mov	d4,#8
+	calli	a15
+.L582:
+	mov	d9,#0
+.L215:
+	j	.L16
+.L17:
+	mov.a	a2,#0
+.L583:
+	mul	d15,d9,#4
+	addsc.a	a15,a12,d15,#0
+	ld.a	a15,[a15]12
+.L584:
+	jeq.a	a2,a15,.L18
+.L585:
+	movh.a	a15,#@his(seekfree_assistant_transfer_callback)
+	lea	a15,[a15]@los(seekfree_assistant_transfer_callback)
+	ld.a	a2,[a15]
+.L586:
+	mul	d15,d9,#4
+	addsc.a	a15,a12,d15,#0
+	ld.a	a4,[a15]12
+.L587:
+	mov	d4,d8
+.L216:
+	calli	a2
+.L18:
+	mov.a	a2,#0
+.L588:
+	mul	d15,d9,#4
+	addsc.a	a15,a12,d15,#0
+	ld.a	a15,[a15]44
+.L589:
+	jeq.a	a2,a15,.L19
+.L590:
+	movh.a	a15,#@his(seekfree_assistant_transfer_callback)
+	lea	a15,[a15]@los(seekfree_assistant_transfer_callback)
+	ld.a	a2,[a15]
+.L591:
+	mul	d15,d9,#4
+	addsc.a	a15,a12,d15,#0
+	ld.a	a4,[a15]44
+.L592:
+	mov	d4,d8
+.L217:
+	calli	a2
+.L19:
+	add	d9,#1
+.L16:
+	jlt.u	d9,#8,.L17
+.L593:
+	ret
+.L182:
+	
+__seekfree_assistant_camera_dot_send_function_end:
+	.size	seekfree_assistant_camera_dot_send,__seekfree_assistant_camera_dot_send_function_end-seekfree_assistant_camera_dot_send
+.L114:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_oscilloscope_send',code,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_oscilloscope_send'
+	.align	2
+	
+	.global	seekfree_assistant_oscilloscope_send
+; Function seekfree_assistant_oscilloscope_send
+.L62:
+seekfree_assistant_oscilloscope_send:	.type	func
+	mov.aa	a15,a4
+.L219:
+	ld.bu	d15,[a15]1
+.L288:
+	and	d15,#15
+	st.b	[a15]1,d15
+.L289:
+	ld.bu	d15,[a15]1
+	mov	d0,#8
+	ge.u	d4,d0,d15
+	movh.a	a4,#@his(.1.str)
+.L218:
+	lea	a4,[a4]@los(.1.str)
+	mov	d5,#197
+	call	debug_assert_handler
+.L290:
+	mov	d15,#170
+.L291:
+	st.b	[a15],d15
+.L292:
+	ld.bu	d15,[a15]1
+.L293:
+	rsub	d15,d15,#8
+.L294:
+	mul	d15,d15,#4
+.L295:
+	rsub	d15,d15,#36
+	extr.u	d8,d15,#0,#8
+.L220:
+	st.b	[a15]3,d8
+.L296:
+	ld.bu	d15,[a15]1
+.L297:
+	or	d15,#16
+	st.b	[a15]1,d15
+.L298:
+	mov	d15,#0
+.L299:
+	st.b	[a15]2,d15
+.L300:
+	mov.aa	a4,a15
+.L221:
+	mov	d4,d8
+.L223:
+	call	seekfree_assistant_sum
+.L222:
+	st.b	[a15]2,d2
+.L301:
+	movh.a	a2,#@his(seekfree_assistant_transfer_callback)
+	lea	a2,[a2]@los(seekfree_assistant_transfer_callback)
+	ld.a	a2,[a2]
+.L302:
+	mov.aa	a4,a15
+.L224:
+	mov	d4,d8
+.L226:
+	calli	a2
+.L225:
+	ret
+.L135:
+	
+__seekfree_assistant_oscilloscope_send_function_end:
+	.size	seekfree_assistant_oscilloscope_send,__seekfree_assistant_oscilloscope_send_function_end-seekfree_assistant_oscilloscope_send
+.L79:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_camera_information_config',code,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_camera_information_config'
+	.align	2
+	
+	.global	seekfree_assistant_camera_information_config
+; Function seekfree_assistant_camera_information_config
+.L64:
+seekfree_assistant_camera_information_config:	.type	func
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L307:
+	mov	d15,#170
+.L308:
+	st.b	[a15],d15
+.L309:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L310:
+	mov	d15,#3
+.L311:
+	st.b	[a15]1,d15
+.L312:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L313:
+	mov	d15,#8
+.L314:
+	st.b	[a15]3,d15
+.L315:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L316:
+	st.b	[a15]8,d4
+.L317:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L318:
+	st.a	[a15],a4
+.L319:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L320:
+	st.h	[a15]4,d5
+.L321:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L322:
+	st.h	[a15]6,d6
+.L323:
+	ret
+.L140:
+	
+__seekfree_assistant_camera_information_config_function_end:
+	.size	seekfree_assistant_camera_information_config,__seekfree_assistant_camera_information_config_function_end-seekfree_assistant_camera_information_config
+.L84:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_camera_boundary_config',code,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_camera_boundary_config'
+	.align	2
+	
+	.global	seekfree_assistant_camera_boundary_config
+; Function seekfree_assistant_camera_boundary_config
+.L66:
+seekfree_assistant_camera_boundary_config:	.type	func
+	sub.a	a10,#8
+.L227:
+	mov	e8,d4,d5
+	mov.aa	a12,a4
+.L232:
+	st.a	[a10],a5
+.L233:
+	st.a	[a10]4,a6
+.L234:
+	mov.aa	a13,a7
+.L235:
+	ld.a	a14,[a10]8
+.L236:
+	mov	d10,#0
+.L237:
+	mov	d11,#0
+.L239:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+	ld.bu	d15,[a15]8
+	ne	d4,d15,#0
+.L228:
+	movh.a	a4,#@his(.1.str)
+.L230:
+	lea	a4,[a4]@los(.1.str)
+	mov	d5,#264
+.L229:
+	call	debug_assert_handler
+.L231:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L241:
+	st.h	[a15]4,d8
+.L242:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L328:
+	mov	d15,#0
+.L329:
+	st.b	[a15]6,d15
+.L330:
+	mov	d1,#0
+.L243:
+	j	.L20
+.L21:
+	mul	d15,d1,#4
+.L331:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L332:
+	addsc.a	a2,a15,d15,#0
+.L333:
+	mov.a	a15,#0
+.L334:
+	st.a	[a2]12,a15
+.L335:
+	mul	d15,d1,#4
+.L336:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L337:
+	addsc.a	a2,a15,d15,#0
+.L338:
+	mov.a	a15,#0
+.L339:
+	st.a	[a2]44,a15
+.L340:
+	add	d1,#1
+.L20:
+	jlt.u	d1,#3,.L21
+.L341:
+	mov	d15,#0
+.L245:
+	jeq	d15,d9,.L22
+.L246:
+	mov	d0,#1
+.L247:
+	jeq	d0,d9,.L23
+.L248:
+	mov	d0,#2
+.L249:
+	jeq	d0,d9,.L24
+.L250:
+	mov	d15,#3
+.L251:
+	jeq	d15,d9,.L25
+.L252:
+	j	.L26
+.L22:
+	mov.a	a15,#0
+.L342:
+	jeq.a	a15,a12,.L27
+.L343:
+	add	d10,#1
+.L344:
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L345:
+	ld.bu	d15,[a15]6
+.L346:
+	or	d15,#1
+	st.b	[a2]6,d15
+.L347:
+	mul	d15,d1,#4
+.L348:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L349:
+	addsc.a	a15,a15,d15,#0
+.L350:
+	st.a	[a15]12,a12
+.L351:
+	add	d15,d1,#1
+	extr.u	d1,d15,#0,#8
+.L27:
+	mov.a	a15,#0
+.L352:
+	ld.a	a2,[a10]
+.L253:
+	jeq.a	a15,a2,.L28
+.L353:
+	add	d10,#1
+.L354:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+.L254:
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+.L355:
+	ld.bu	d15,[a2]6
+.L356:
+	or	d15,#2
+	st.b	[a15]6,d15
+.L357:
+	mul	d15,d1,#4
+.L358:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L359:
+	addsc.a	a15,a15,d15,#0
+.L360:
+	ld.a	a2,[a10]
+.L255:
+	st.a	[a15]12,a2
+.L361:
+	add	d15,d1,#1
+	extr.u	d1,d15,#0,#8
+.L28:
+	mov.a	a2,#0
+.L362:
+	ld.a	a15,[a10]4
+.L256:
+	jeq.a	a2,a15,.L29
+.L363:
+	add	d10,#1
+.L364:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+.L257:
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+.L365:
+	ld.bu	d15,[a2]6
+.L366:
+	or	d15,#4
+	st.b	[a15]6,d15
+.L367:
+	mul	d15,d1,#4
+.L368:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L369:
+	addsc.a	a2,a15,d15,#0
+.L370:
+	ld.a	a15,[a10]4
+.L258:
+	st.a	[a2]12,a15
+.L29:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L371:
+	ld.hu	d0,[a15]6
+.L372:
+	mov	d15,#255
+.L373:
+	jge.u	d15,d0,.L30
+.L374:
+	mov	d11,#1
+.L30:
+	j	.L31
+.L23:
+	mov.a	a15,#0
+.L375:
+	jeq.a	a15,a13,.L32
+.L376:
+	add	d10,#1
+.L377:
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L378:
+	ld.bu	d15,[a15]6
+.L379:
+	or	d15,#1
+	st.b	[a2]6,d15
+.L380:
+	mul	d15,d1,#4
+.L381:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L382:
+	addsc.a	a15,a15,d15,#0
+.L383:
+	st.a	[a15]44,a13
+.L384:
+	add	d1,#1
+.L244:
+	extr.u	d1,d1,#0,#8
+.L32:
+	mov.a	a15,#0
+.L385:
+	jeq.a	a15,a14,.L33
+.L386:
+	add	d10,#1
+.L387:
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L388:
+	ld.bu	d15,[a15]6
+.L389:
+	or	d15,#2
+	st.b	[a2]6,d15
+.L390:
+	mul	d15,d1,#4
+.L391:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L392:
+	addsc.a	a15,a15,d15,#0
+.L393:
+	st.a	[a15]44,a14
+.L394:
+	add	d1,#1
+.L259:
+	extr.u	d1,d1,#0,#8
+.L33:
+	mov.a	a15,#0
+.L395:
+	ld.a	a2,[a10]12
+.L261:
+	jeq.a	a15,a2,.L34
+.L396:
+	add	d10,#1
+.L397:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+.L262:
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+.L398:
+	ld.bu	d15,[a2]6
+.L399:
+	or	d15,#4
+	st.b	[a15]6,d15
+.L400:
+	mul	d15,d1,#4
+.L401:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L402:
+	addsc.a	a15,a15,d15,#0
+.L403:
+	ld.a	a2,[a10]12
+.L263:
+	st.a	[a15]44,a2
+.L34:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L404:
+	ld.hu	d0,[a15]4
+.L405:
+	mov	d15,#255
+.L406:
+	jge.u	d15,d0,.L35
+.L407:
+	mov	d11,#1
+.L35:
+	j	.L36
+.L24:
+	mov.a	a15,#0
+.L408:
+	jeq.a	a15,a12,.L37
+.L409:
+	mov.a	a15,#0
+.L410:
+	jeq.a	a15,a13,.L38
+.L411:
+	add	d10,#1
+.L412:
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L413:
+	ld.bu	d15,[a15]6
+.L414:
+	or	d15,#1
+	st.b	[a2]6,d15
+.L415:
+	mul	d15,d1,#4
+.L416:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L417:
+	addsc.a	a15,a15,d15,#0
+.L418:
+	st.a	[a15]12,a12
+.L419:
+	mul	d15,d1,#4
+.L420:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L421:
+	addsc.a	a15,a15,d15,#0
+.L422:
+	st.a	[a15]44,a13
+.L423:
+	add	d1,#1
+.L260:
+	extr.u	d1,d1,#0,#8
+.L38:
+.L37:
+	mov.a	a15,#0
+.L424:
+	ld.a	a2,[a10]
+.L265:
+	jeq.a	a15,a2,.L39
+.L425:
+	mov.a	a15,#0
+.L426:
+	jeq.a	a15,a14,.L40
+.L427:
+	add	d10,#1
+.L428:
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+.L266:
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L429:
+	ld.bu	d15,[a15]6
+.L430:
+	or	d15,#2
+	st.b	[a2]6,d15
+.L431:
+	mul	d15,d1,#4
+.L432:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L433:
+	addsc.a	a2,a15,d15,#0
+.L434:
+	ld.a	a15,[a10]
+.L267:
+	st.a	[a2]12,a15
+.L435:
+	mul	d15,d1,#4
+.L436:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+.L268:
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L437:
+	addsc.a	a15,a15,d15,#0
+.L438:
+	st.a	[a15]44,a14
+.L439:
+	add	d1,#1
+.L264:
+	extr.u	d1,d1,#0,#8
+.L40:
+.L39:
+	mov.a	a2,#0
+.L440:
+	ld.a	a15,[a10]4
+.L269:
+	jeq.a	a2,a15,.L41
+.L441:
+	mov.a	a15,#0
+.L270:
+	ld.a	a2,[a10]12
+.L271:
+	jeq.a	a15,a2,.L42
+.L442:
+	add	d10,#1
+.L443:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+	movh.a	a2,#@his(seekfree_assistant_camera_dot_data)
+.L272:
+	lea	a2,[a2]@los(seekfree_assistant_camera_dot_data)
+.L444:
+	ld.bu	d15,[a2]6
+.L445:
+	or	d15,#4
+	st.b	[a15]6,d15
+.L446:
+	mul	d15,d1,#4
+.L447:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L448:
+	addsc.a	a2,a15,d15,#0
+.L449:
+	ld.a	a15,[a10]4
+.L273:
+	st.a	[a2]12,a15
+.L450:
+	mul	d15,d1,#4
+.L451:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+.L274:
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L452:
+	addsc.a	a15,a15,d15,#0
+.L453:
+	ld.a	a2,[a10]12
+.L275:
+	st.a	[a15]44,a2
+.L42:
+.L41:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L454:
+	ld.hu	d0,[a15]4
+.L455:
+	mov	d15,#255
+.L456:
+	jlt.u	d15,d0,.L43
+.L457:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L458:
+	ld.hu	d0,[a15]6
+.L459:
+	mov	d15,#255
+.L460:
+	jge.u	d15,d0,.L44
+.L43:
+	mov	d11,#1
+.L44:
+	j	.L45
+.L25:
+	j	.L46
+.L26:
+.L46:
+.L45:
+.L36:
+.L31:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L461:
+	sha	d9,#6
+.L462:
+	sha	d11,#5
+.L240:
+	or	d9,d11
+.L463:
+	or	d10,d9
+.L238:
+	st.b	[a15]2,d10
+.L464:
+	ret
+.L148:
+	
+__seekfree_assistant_camera_boundary_config_function_end:
+	.size	seekfree_assistant_camera_boundary_config,__seekfree_assistant_camera_boundary_config_function_end-seekfree_assistant_camera_boundary_config
+.L89:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_camera_send',code,cluster('seekfree_assistant_camera_send')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_camera_send'
+	.align	2
+	
+	.global	seekfree_assistant_camera_send
+; Function seekfree_assistant_camera_send
+.L68:
+seekfree_assistant_camera_send:	.type	func
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+	ld.bu	d15,[a15]8
+	ne	d4,d15,#0
+	movh.a	a4,#@his(.1.str)
+	lea	a4,[a4]@los(.1.str)
+	mov	d5,#376
+	call	debug_assert_handler
+.L469:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L470:
+	ld.bu	d4,[a15]8
+.L471:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L472:
+	ld.a	a4,[a15]
+.L473:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L474:
+	ld.bu	d15,[a15]2
+.L475:
+	and	d5,d15,#15
+.L476:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L477:
+	ld.hu	d6,[a15]4
+.L478:
+	movh.a	a15,#@his(seekfree_assistant_camera_buffer)
+	lea	a15,[a15]@los(seekfree_assistant_camera_buffer)
+.L479:
+	ld.hu	d7,[a15]6
+	call	seekfree_assistant_camera_data_send
+.L480:
+	movh.a	a15,#@his(seekfree_assistant_camera_dot_data)
+	lea	a15,[a15]@los(seekfree_assistant_camera_dot_data)
+.L481:
+	ld.bu	d15,[a15]2
+.L482:
+	and	d15,#15
+.L483:
+	jeq	d15,#0,.L47
+.L484:
+	movh.a	a4,#@his(seekfree_assistant_camera_buffer)
+	lea	a4,[a4]@los(seekfree_assistant_camera_buffer)
+	call	seekfree_assistant_camera_dot_send
+.L47:
+	ret
+.L161:
+	
+__seekfree_assistant_camera_send_function_end:
+	.size	seekfree_assistant_camera_send,__seekfree_assistant_camera_send_function_end-seekfree_assistant_camera_send
+.L94:
+	; End of function
+	
+	.sdecl	'.text.seekfree_assistant.seekfree_assistant_data_analysis',code,cluster('seekfree_assistant_data_analysis')
+	.sect	'.text.seekfree_assistant.seekfree_assistant_data_analysis'
+	.align	2
+	
+	.global	seekfree_assistant_data_analysis
+; Function seekfree_assistant_data_analysis
+.L70:
+seekfree_assistant_data_analysis:	.type	func
+	sub.a	a10,#136
+.L276:
+	movh.a	a15,#@his(seekfree_assistant_receive_callback)
+	lea	a15,[a15]@los(seekfree_assistant_receive_callback)
+	ld.a	a15,[a15]
+.L489:
+	lea	a4,[a10]4
+.L490:
+	mov	d4,#128
+	calli	a15
+.L491:
+	st.w	[a10],d2
+.L492:
+	ld.w	d15,[a10]
+.L493:
+	jeq	d15,#0,.L48
+.L494:
+	movh.a	a4,#@his(seekfree_assistant_fifo)
+	lea	a4,[a4]@los(seekfree_assistant_fifo)
+.L495:
+	lea	a5,[a10]4
+.L496:
+	ld.w	d4,[a10]
+	call	fifo_write_buffer
+.L48:
+	j	.L49
+.L50:
+	mov	d15,#8
+.L497:
+	st.w	[a10],d15
+.L498:
+	movh.a	a4,#@his(seekfree_assistant_fifo)
+	lea	a4,[a4]@los(seekfree_assistant_fifo)
+.L499:
+	lea	a5,[a10]4
+.L500:
+	lea	a6,[a10]0
+.L501:
+	mov	d4,#1
+	call	fifo_read_buffer
+.L502:
+	ld.bu	d15,[a10]4
+.L503:
+	mov	d0,#85
+.L504:
+	jeq	d15,d0,.L51
+.L505:
+	mov	d15,#1
+.L506:
+	st.w	[a10],d15
+.L507:
+	j	.L52
+.L51:
+	ld.bu	d15,[a10]7
+.L277:
+	mov	d0,#0
+.L508:
+	st.b	[a10]7,d0
+.L509:
+	lea	a4,[a10]4
+.L510:
+	mov	d4,#8
+	call	seekfree_assistant_sum
+.L511:
+	jne	d15,d2,.L53
+.L512:
+	ld.bu	d15,[a10]6
+.L278:
+	add	d15,#-1
+.L513:
+	mul	d15,d15,#4
+.L514:
+	movh.a	a15,#@his(seekfree_assistant_parameter)
+	lea	a15,[a15]@los(seekfree_assistant_parameter)
+.L515:
+	addsc.a	a15,a15,d15,#0
+.L516:
+	ld.w	d15,[a10]8
+.L517:
+	st.w	[a15],d15
+.L518:
+	ld.bu	d15,[a10]6
+.L519:
+	movh.a	a15,#@his(seekfree_assistant_parameter_update_flag)
+	lea	a15,[a15]@los(seekfree_assistant_parameter_update_flag)
+.L520:
+	addsc.a	a15,a15,d15,#0
+.L521:
+	mov	d15,#1
+.L522:
+	st.b	[a15]-1,d15
+.L523:
+	j	.L54
+.L53:
+	mov	d15,#1
+.L279:
+	st.w	[a10],d15
+.L54:
+.L52:
+	movh.a	a4,#@his(seekfree_assistant_fifo)
+	lea	a4,[a4]@los(seekfree_assistant_fifo)
+.L524:
+	lea	a5,[a10]4
+.L525:
+	lea	a6,[a10]0
+.L526:
+	mov	d4,#0
+	call	fifo_read_buffer
+.L49:
+	movh.a	a4,#@his(seekfree_assistant_fifo)
+	lea	a4,[a4]@los(seekfree_assistant_fifo)
+	call	fifo_used
+.L527:
+	jge.u	d2,#8,.L50
+.L528:
+	ret
+.L162:
+	
+__seekfree_assistant_data_analysis_function_end:
+	.size	seekfree_assistant_data_analysis,__seekfree_assistant_data_analysis_function_end-seekfree_assistant_data_analysis
+.L99:
+	; End of function
+	
+	.sdecl	'.bss.seekfree_assistant.seekfree_assistant_buffer',data,cluster('seekfree_assistant_buffer')
+	.sect	'.bss.seekfree_assistant.seekfree_assistant_buffer'
+seekfree_assistant_buffer:	.type	object
+	.size	seekfree_assistant_buffer,128
+	.space	128
+	.sdecl	'.data.seekfree_assistant.seekfree_assistant_fifo',data,cluster('seekfree_assistant_fifo')
+	.sect	'.data.seekfree_assistant.seekfree_assistant_fifo'
+	.align	4
+seekfree_assistant_fifo:	.type	object
+	.size	seekfree_assistant_fifo,24
+	.space	4
+	.word	seekfree_assistant_buffer
+	.space	8
+	.word	128,128
+	.sdecl	'.bss.seekfree_assistant.seekfree_assistant_camera_data',data,cluster('seekfree_assistant_camera_data')
+	.sect	'.bss.seekfree_assistant.seekfree_assistant_camera_data'
+	.align	4
+seekfree_assistant_camera_data:	.type	object
+	.size	seekfree_assistant_camera_data,8
+	.space	8
+	.sdecl	'.bss.seekfree_assistant.seekfree_assistant_camera_dot_data',data,cluster('seekfree_assistant_camera_dot_data')
+	.sect	'.bss.seekfree_assistant.seekfree_assistant_camera_dot_data'
+	.align	4
+seekfree_assistant_camera_dot_data:	.type	object
+	.size	seekfree_assistant_camera_dot_data,8
+	.space	8
+	.sdecl	'.bss.seekfree_assistant.seekfree_assistant_camera_buffer',data,cluster('seekfree_assistant_camera_buffer')
+	.sect	'.bss.seekfree_assistant.seekfree_assistant_camera_buffer'
+	.align	4
+seekfree_assistant_camera_buffer:	.type	object
+	.size	seekfree_assistant_camera_buffer,76
+	.space	76
+	.sdecl	'.data.seekfree_assistant.seekfree_assistant_transfer_callback',data,cluster('seekfree_assistant_transfer_callback')
+	.sect	'.data.seekfree_assistant.seekfree_assistant_transfer_callback'
+	.global	seekfree_assistant_transfer_callback
+	.align	4
+seekfree_assistant_transfer_callback:	.type	object
+	.size	seekfree_assistant_transfer_callback,4
+	.word	seekfree_assistant_transfer
+	.sdecl	'.data.seekfree_assistant.seekfree_assistant_receive_callback',data,cluster('seekfree_assistant_receive_callback')
+	.sect	'.data.seekfree_assistant.seekfree_assistant_receive_callback'
+	.global	seekfree_assistant_receive_callback
+	.align	4
+seekfree_assistant_receive_callback:	.type	object
+	.size	seekfree_assistant_receive_callback,4
+	.word	seekfree_assistant_receive
+	.sdecl	'.bss.seekfree_assistant.seekfree_assistant_oscilloscope_data',data,cluster('seekfree_assistant_oscilloscope_data')
+	.sect	'.bss.seekfree_assistant.seekfree_assistant_oscilloscope_data'
+	.global	seekfree_assistant_oscilloscope_data
+	.align	4
+seekfree_assistant_oscilloscope_data:	.type	object
+	.size	seekfree_assistant_oscilloscope_data,36
+	.space	36
+	.sdecl	'.data.seekfree_assistant.seekfree_assistant_parameter',data,cluster('seekfree_assistant_parameter')
+	.sect	'.data.seekfree_assistant.seekfree_assistant_parameter'
+	.global	seekfree_assistant_parameter
+	.align	2
+seekfree_assistant_parameter:	.type	object
+	.size	seekfree_assistant_parameter,32
+	.space	32
+	.sdecl	'.data.seekfree_assistant.seekfree_assistant_parameter_update_flag',data,cluster('seekfree_assistant_parameter_update_flag')
+	.sect	'.data.seekfree_assistant.seekfree_assistant_parameter_update_flag'
+	.global	seekfree_assistant_parameter_update_flag
+seekfree_assistant_parameter_update_flag:	.type	object
+	.size	seekfree_assistant_parameter_update_flag,8
+	.space	8
+	.sdecl	'.rodata.seekfree_assistant..1.str',data,rom
+	.sect	'.rodata.seekfree_assistant..1.str'
+.1.str:	.type	object
+	.size	.1.str,48
+	.byte	46,46,47,108,105,98,114,97
+	.byte	114,105,101,115,47,122,102,95
+	.byte	99,111,109,112,111,110,101,110
+	.byte	116,115,47,115,101,101,107,102
+	.byte	114,101,101,95,97,115,115,105
+	.byte	115,116,97,110
+	.byte	116,46,99
+	.space	1
+	.calls	'__INDIRECT__','seekfree_assistant_transfer'
+	.calls	'__INDIRECT__','seekfree_assistant_receive'
+	.calls	'seekfree_assistant_camera_data_send','__INDIRECT__'
+	.calls	'seekfree_assistant_camera_dot_send','__INDIRECT__'
+	.calls	'seekfree_assistant_oscilloscope_send','debug_assert_handler'
+	.calls	'seekfree_assistant_oscilloscope_send','seekfree_assistant_sum'
+	.calls	'seekfree_assistant_oscilloscope_send','__INDIRECT__'
+	.calls	'seekfree_assistant_camera_boundary_config','debug_assert_handler'
+	.calls	'seekfree_assistant_camera_send','debug_assert_handler'
+	.calls	'seekfree_assistant_camera_send','seekfree_assistant_camera_data_send'
+	.calls	'seekfree_assistant_camera_send','seekfree_assistant_camera_dot_send'
+	.calls	'seekfree_assistant_data_analysis','__INDIRECT__'
+	.calls	'seekfree_assistant_data_analysis','fifo_write_buffer'
+	.calls	'seekfree_assistant_data_analysis','fifo_read_buffer'
+	.calls	'seekfree_assistant_data_analysis','seekfree_assistant_sum'
+	.calls	'seekfree_assistant_data_analysis','fifo_used'
+	.calls	'seekfree_assistant_sum','',0
+	.calls	'seekfree_assistant_camera_data_send','',0
+	.calls	'seekfree_assistant_camera_dot_send','',0
+	.calls	'seekfree_assistant_oscilloscope_send','',0
+	.calls	'seekfree_assistant_camera_information_config','',0
+	.calls	'seekfree_assistant_camera_boundary_config','',8
+	.calls	'seekfree_assistant_camera_send','',0
+	.extern	debug_assert_handler
+	.extern	seekfree_assistant_transfer
+	.extern	seekfree_assistant_receive
+	.extern	fifo_used
+	.extern	fifo_write_buffer
+	.extern	fifo_read_buffer
+	.extern	__INDIRECT__
+	.calls	'seekfree_assistant_data_analysis','',136
+	.sdecl	'.debug_info',debug
+	.sect	'.debug_info'
+.L72:
+	.word	2968
+	.half	3
+	.word	.L73
+	.byte	4
+.L71:
+	.byte	1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L74
+.L138:
+	.byte	2
+	.byte	'unsigned char',0,1,8,2
+	.byte	'char',0,1,6,3
+	.word	215
+	.byte	2
+	.byte	'int',0,4,5,4
+	.byte	'debug_assert_handler',0,1,112,9,1,1,1,1,5
+	.byte	'pass',0,1,112,47
+	.word	198
+	.byte	5
+	.byte	'file',0,1,112,59
+	.word	223
+	.byte	5
+	.byte	'line',0,1,112,69
+	.word	228
+	.byte	0,2
+	.byte	'float',0,4,4
+.L188:
+	.byte	6,32
+	.word	304
+	.byte	7,7,0
+.L187:
+	.byte	8,2,98,9,36,9
+	.byte	'head',0
+	.word	198
+	.byte	1,2,35,0,9
+	.byte	'channel_num',0
+	.word	198
+	.byte	1,2,35,1,9
+	.byte	'check_sum',0
+	.word	198
+	.byte	1,2,35,2,9
+	.byte	'length',0
+	.word	198
+	.byte	1,2,35,3,9
+	.byte	'data',0
+	.word	313
+	.byte	32,2,35,4,0
+.L136:
+	.byte	3
+	.word	322
+.L141:
+	.byte	10,2,75,9,1,11
+	.byte	'SEEKFREE_ASSISTANT_BINARY',0,1,11
+	.byte	'SEEKFREE_ASSISTANT_OV7725_BIN',0,1,11
+	.byte	'SEEKFREE_ASSISTANT_GRAY',0,2,11
+	.byte	'SEEKFREE_ASSISTANT_MT9V03X',0,2,11
+	.byte	'SEEKFREE_ASSISTANT_RGB565',0,3,11
+	.byte	'SEEKFREE_ASSISTANT_SCC8660',0,3,0,12
+	.byte	'void',0
+.L143:
+	.byte	3
+	.word	595
+.L145:
+	.byte	2
+	.byte	'unsigned short int',0,2,7
+.L149:
+	.byte	10,2,89,9,1,11
+	.byte	'X_BOUNDARY',0,0,11
+	.byte	'Y_BOUNDARY',0,1,11
+	.byte	'XY_BOUNDARY',0,2,11
+	.byte	'NO_BOUNDARY',0,3,0
+.L164:
+	.byte	2
+	.byte	'unsigned long int',0,4,7,8,2,140,1,9,8,9
+	.byte	'head',0
+	.word	198
+	.byte	1,2,35,0,9
+	.byte	'function',0
+	.word	198
+	.byte	1,2,35,1,9
+	.byte	'channel',0
+	.word	198
+	.byte	1,2,35,2,9
+	.byte	'check_sum',0
+	.word	198
+	.byte	1,2,35,3,9
+	.byte	'data',0
+	.word	304
+	.byte	4,2,35,4,0
+.L166:
+	.byte	3
+	.word	709
+.L168:
+	.byte	6,128,1
+	.word	688
+	.byte	7,31,0,13
+	.word	198
+	.byte	3
+	.word	813
+	.byte	14
+	.byte	'seekfree_assistant_transfer',0,3,41,15
+	.word	688
+	.byte	1,1,1,1,5
+	.byte	'buff',0,3,41,63
+	.word	818
+	.byte	5
+	.byte	'length',0,3,41,76
+	.word	688
+	.byte	0
+.L171:
+	.byte	3
+	.word	198
+	.byte	14
+	.byte	'seekfree_assistant_receive',0,3,42,15
+	.word	688
+	.byte	1,1,1,1,5
+	.byte	'buff',0,3,42,57
+	.word	892
+	.byte	5
+	.byte	'length',0,3,42,70
+	.word	688
+	.byte	0,10,4,78,9,1,11
+	.byte	'FIFO_DATA_8BIT',0,0,11
+	.byte	'FIFO_DATA_16BIT',0,1,11
+	.byte	'FIFO_DATA_32BIT',0,2,0
+.L191:
+	.byte	8,4,85,9,24,9
+	.byte	'execution',0
+	.word	198
+	.byte	1,2,35,0,9
+	.byte	'type',0
+	.word	965
+	.byte	1,2,35,1,9
+	.byte	'buffer',0
+	.word	601
+	.byte	4,2,35,4,9
+	.byte	'head',0
+	.word	688
+	.byte	4,2,35,8,9
+	.byte	'end',0
+	.word	688
+	.byte	4,2,35,12,9
+	.byte	'size',0
+	.word	688
+	.byte	4,2,35,16,9
+	.byte	'max',0
+	.word	688
+	.byte	4,2,35,20,0,3
+	.word	1024
+	.byte	14
+	.byte	'fifo_used',0,4,97,17
+	.word	688
+	.byte	1,1,1,1,5
+	.byte	'fifo',0,4,97,55
+	.word	1133
+	.byte	0,10,4,42,9,1,11
+	.byte	'FIFO_SUCCESS',0,0,11
+	.byte	'FIFO_RESET_UNDO',0,1,11
+	.byte	'FIFO_CLEAR_UNDO',0,2,11
+	.byte	'FIFO_BUFFER_NULL',0,3,11
+	.byte	'FIFO_WRITE_UNDO',0,4,11
+	.byte	'FIFO_SPACE_NO_ENOUGH',0,5,11
+	.byte	'FIFO_READ_UNDO',0,6,11
+	.byte	'FIFO_DATA_NO_ENOUGH',0,7,0,14
+	.byte	'fifo_write_buffer',0,4,100,17
+	.word	1174
+	.byte	1,1,1,1,5
+	.byte	'fifo',0,4,100,55
+	.word	1133
+	.byte	5
+	.byte	'dat',0,4,100,67
+	.word	601
+	.byte	5
+	.byte	'length',0,4,100,79
+	.word	688
+	.byte	0,3
+	.word	688
+	.byte	10,4,72,9,1,11
+	.byte	'FIFO_READ_AND_CLEAN',0,0,11
+	.byte	'FIFO_READ_ONLY',0,1,0,14
+	.byte	'fifo_read_buffer',0,4,102,17
+	.word	1174
+	.byte	1,1,1,1,5
+	.byte	'fifo',0,4,102,55
+	.word	1133
+	.byte	5
+	.byte	'dat',0,4,102,67
+	.word	601
+	.byte	5
+	.byte	'length',0,4,102,80
+	.word	1401
+	.byte	5
+	.byte	'flag',0,4,102,108
+	.word	1406
+	.byte	0,6,32
+	.word	601
+	.byte	7,7,0
+.L194:
+	.byte	8,2,130,1,9,76,9
+	.byte	'image_addr',0
+	.word	601
+	.byte	4,2,35,0,9
+	.byte	'width',0
+	.word	606
+	.byte	2,2,35,4,9
+	.byte	'height',0
+	.word	606
+	.byte	2,2,35,6,9
+	.byte	'camera_type',0
+	.word	417
+	.byte	1,2,35,8,9
+	.byte	'boundary_x',0
+	.word	1534
+	.byte	32,2,35,12,9
+	.byte	'boundary_y',0
+	.word	1534
+	.byte	32,2,35,44,0
+.L183:
+	.byte	3
+	.word	1543
+	.byte	15
+	.byte	'__INDIRECT__',0,3,1,1,1,1,1,2
+	.byte	'short int',0,2,5,16
+	.byte	'__wchar_t',0,3,1,1
+	.word	1687
+	.byte	2
+	.byte	'unsigned int',0,4,7,16
+	.byte	'__size_t',0,3,1,1
+	.word	1718
+	.byte	16
+	.byte	'__ptrdiff_t',0,3,1,1
+	.word	228
+	.byte	17,1,3
+	.word	1771
+	.byte	16
+	.byte	'__codeptr',0,3,1,1
+	.word	1773
+	.byte	16
+	.byte	'__intptr_t',0,3,1,1
+	.word	228
+	.byte	16
+	.byte	'__uintptr_t',0,3,1,1
+	.word	1718
+	.byte	16
+	.byte	'_iob_flag_t',0,5,82,25
+	.word	606
+	.byte	16
+	.byte	'uint8',0,6,105,29
+	.word	198
+	.byte	16
+	.byte	'uint16',0,6,109,29
+	.word	606
+	.byte	16
+	.byte	'uint32',0,6,113,29
+	.word	688
+	.byte	2
+	.byte	'unsigned long long int',0,8,7,16
+	.byte	'uint64',0,6,118,29
+	.word	1899
+	.byte	16
+	.byte	'sint16',0,6,126,29
+	.word	1687
+	.byte	2
+	.byte	'long int',0,4,5,16
+	.byte	'sint32',0,6,131,1,29
+	.word	1955
+	.byte	2
+	.byte	'long long int',0,8,5,16
+	.byte	'sint64',0,6,138,1,29
+	.word	1983
+	.byte	16
+	.byte	'float32',0,6,167,1,29
+	.word	304
+	.byte	16
+	.byte	'pvoid',0,7,57,28
+	.word	601
+	.byte	16
+	.byte	'Ifx_TickTime',0,7,79,28
+	.word	1983
+	.byte	2
+	.byte	'char',0,1,6,16
+	.byte	'int8',0,8,54,29
+	.word	2068
+	.byte	16
+	.byte	'int16',0,8,55,29
+	.word	1687
+	.byte	16
+	.byte	'int32',0,8,56,29
+	.word	228
+	.byte	16
+	.byte	'int64',0,8,57,29
+	.word	1983
+	.byte	18
+	.word	198
+	.byte	16
+	.byte	'vuint8',0,8,59,29
+	.word	2131
+	.byte	16
+	.byte	'seekfree_assistant_image_type_enum',0,2,86,2
+	.word	417
+	.byte	16
+	.byte	'seekfree_assistant_boundary_type_enum',0,2,96,2
+	.word	628
+	.byte	16
+	.byte	'seekfree_assistant_oscilloscope_struct',0,2,105,2
+	.word	322
+.L192:
+	.byte	8,2,108,9,8,9
+	.byte	'head',0
+	.word	198
+	.byte	1,2,35,0,9
+	.byte	'function',0
+	.word	198
+	.byte	1,2,35,1,9
+	.byte	'camera_type',0
+	.word	198
+	.byte	1,2,35,2,9
+	.byte	'length',0
+	.word	198
+	.byte	1,2,35,3,9
+	.byte	'image_width',0
+	.word	606
+	.byte	2,2,35,4,9
+	.byte	'image_height',0
+	.word	606
+	.byte	2,2,35,6,0,16
+	.byte	'seekfree_assistant_camera_struct',0,2,116,2
+	.word	2287
+.L193:
+	.byte	8,2,119,9,8,9
+	.byte	'head',0
+	.word	198
+	.byte	1,2,35,0,9
+	.byte	'function',0
+	.word	198
+	.byte	1,2,35,1,9
+	.byte	'dot_type',0
+	.word	198
+	.byte	1,2,35,2,9
+	.byte	'length',0
+	.word	198
+	.byte	1,2,35,3,9
+	.byte	'dot_num',0
+	.word	606
+	.byte	2,2,35,4,9
+	.byte	'valid_flag',0
+	.word	198
+	.byte	1,2,35,6,9
+	.byte	'reserve',0
+	.word	198
+	.byte	1,2,35,7,0,16
+	.byte	'seekfree_assistant_camera_dot_struct',0,2,128,1,2
+	.word	2446
+	.byte	16
+	.byte	'seekfree_assistant_camera_buffer_struct',0,2,138,1,2
+	.word	1543
+	.byte	13
+	.word	198
+	.byte	3
+	.word	2667
+	.byte	19
+	.word	688
+	.byte	1,1,20
+	.word	2672
+	.byte	20
+	.word	688
+	.byte	0,3
+	.word	2677
+.L195:
+	.byte	16
+	.byte	'seekfree_assistant_transfer_callback_function',0,2,149,1,18
+	.word	2695
+	.byte	3
+	.word	198
+	.byte	19
+	.word	688
+	.byte	1,1,20
+	.word	2755
+	.byte	20
+	.word	688
+	.byte	0,3
+	.word	2760
+.L196:
+	.byte	16
+	.byte	'seekfree_assistant_receive_callback_function',0,2,150,1,18
+	.word	2778
+	.byte	6,8
+	.word	198
+	.byte	7,7,0
+.L189:
+	.byte	18
+	.word	2837
+	.byte	16
+	.byte	'fifo_state_enum',0,4,53,2
+	.word	1174
+	.byte	16
+	.byte	'fifo_operation_enum',0,4,76,2
+	.word	1406
+	.byte	16
+	.byte	'fifo_data_type_enum',0,4,83,2
+	.word	965
+	.byte	16
+	.byte	'fifo_struct',0,4,94,2
+	.word	1024
+.L190:
+	.byte	6,128,1
+	.word	198
+	.byte	7,127,0,3
+	.word	2677
+	.byte	3
+	.word	2760
+	.byte	0
+	.sdecl	'.debug_abbrev',debug
+	.sect	'.debug_abbrev'
+.L73:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,16,6,0,0,2,36,0,3,8,11,15,62,15,0,0,3,15,0,73,19,0,0,4,46,1,3,8,58
+	.byte	15,59,15,57,15,54,15,39,12,63,12,60,12,0,0,5,5,0,3,8,58,15,59,15,57,15,73,19,0,0,6,1,1,11,15,73,19,0,0
+	.byte	7,33,0,47,15,0,0,8,19,1,58,15,59,15,57,15,11,15,0,0,9,13,0,3,8,73,19,11,15,56,9,0,0,10,4,1,58,15,59,15
+	.byte	57,15,11,15,0,0,11,40,0,3,8,28,13,0,0,12,59,0,3,8,0,0,13,38,0,73,19,0,0,14,46,1,3,8,58,15,59,15,57,15
+	.byte	73,19,54,15,39,12,63,12,60,12,0,0,15,46,0,3,8,58,15,59,15,57,15,54,15,63,12,60,12,0,0,16,22,0,3,8,58,15
+	.byte	59,15,57,15,73,19,0,0,17,21,0,54,15,0,0,18,53,0,73,19,0,0,19,21,1,73,19,54,15,39,12,0,0,20,5,0,73,19,0
+	.byte	0,0
+	.sdecl	'.debug_line',debug
+	.sect	'.debug_line'
+.L74:
+	.word	.L281-.L280
+.L280:
+	.half	3
+	.word	.L283-.L282
+.L282:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\zf_common',0
+	.byte	'F:\\Infineon\\AURIX-Studio-1.10.10\\tools\\Compilers\\Tasking_1.1r8\\ctc\\include\\',0
+	.byte	'F:\\\\Smart_car\\\\code\\\\debugging\\\\back_car\\\\LADRC-V0.3\\\\libraries\\\\infineon_libraries\\\\iLLD\\\\TC26B\\\\Tricore\\\\Cpu\\\\Std',0
+	.byte	0
+	.byte	'zf_common_debug.h',0,1,0,0
+	.byte	'..\\libraries\\zf_components\\seekfree_assistant.h',0,0,0,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0
+	.byte	'zf_common_fifo.h',0,1,0,0
+	.byte	'stdio.h',0,2,0,0
+	.byte	'Platform_Types.h',0,3,0,0
+	.byte	'ifx_types.h',0,3,0,0
+	.byte	'zf_common_typedef.h',0,1,0,0,0
+.L283:
+.L281:
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_info'
+.L75:
+	.word	342
+	.half	3
+	.word	.L76
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L78,.L77
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_oscilloscope_send',0,1,190,1,6,1,1,1
+	.word	.L62,.L135,.L61
+	.byte	4
+	.byte	'seekfree_assistant_oscilloscope',0,1,190,1,84
+	.word	.L136,.L137
+	.byte	5
+	.word	.L62,.L135
+	.byte	6
+	.byte	'packet_size',0,1,192,1,11
+	.word	.L138,.L139
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_abbrev'
+.L76:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_line'
+.L77:
+	.word	.L285-.L284
+.L284:
+	.half	3
+	.word	.L287-.L286
+.L286:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L287:
+	.byte	5,6,7,0,5,2
+	.word	.L62
+	.byte	3,189,1,1,5,36,9
+	.half	.L219-.L62
+	.byte	3,5,1,5,50,9
+	.half	.L288-.L219
+	.byte	1,5,5,9
+	.half	.L289-.L288
+	.byte	3,2,1,5,53,9
+	.half	.L290-.L289
+	.byte	3,3,1,5,51,9
+	.half	.L291-.L290
+	.byte	1,5,168,1,9
+	.half	.L292-.L291
+	.byte	3,3,1,5,135,1,9
+	.half	.L293-.L292
+	.byte	1,5,183,1,9
+	.half	.L294-.L293
+	.byte	1,5,90,9
+	.half	.L295-.L294
+	.byte	1,5,51,9
+	.half	.L220-.L295
+	.byte	3,1,1,5,36,9
+	.half	.L296-.L220
+	.byte	3,3,1,5,50,9
+	.half	.L297-.L296
+	.byte	1,5,53,9
+	.half	.L298-.L297
+	.byte	3,3,1,5,51,9
+	.half	.L299-.L298
+	.byte	1,5,118,9
+	.half	.L300-.L299
+	.byte	3,1,1,5,51,9
+	.half	.L222-.L300
+	.byte	1,5,5,9
+	.half	.L301-.L222
+	.byte	3,4,1,5,90,9
+	.half	.L302-.L301
+	.byte	1,5,1,9
+	.half	.L225-.L302
+	.byte	3,1,1,7,9
+	.half	.L79-.L225
+	.byte	0,1,1
+.L285:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_ranges'
+.L78:
+	.word	-1,.L62,0,.L79-.L62,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_info'
+.L80:
+	.word	368
+	.half	3
+	.word	.L81
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L83,.L82
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_information_config',0,1,228,1,6,1,1,1
+	.word	.L64,.L140,.L63
+	.byte	4
+	.byte	'camera_type',0,1,228,1,87
+	.word	.L141,.L142
+	.byte	4
+	.byte	'image_addr',0,1,228,1,106
+	.word	.L143,.L144
+	.byte	4
+	.byte	'width',0,1,228,1,125
+	.word	.L145,.L146
+	.byte	4
+	.byte	'height',0,1,228,1,139,1
+	.word	.L145,.L147
+	.byte	5
+	.word	.L64,.L140
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_abbrev'
+.L81:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_line'
+.L82:
+	.word	.L304-.L303
+.L303:
+	.half	3
+	.word	.L306-.L305
+.L305:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L306:
+	.byte	5,5,7,0,5,2
+	.word	.L64
+	.byte	3,229,1,1,5,53,9
+	.half	.L307-.L64
+	.byte	1,5,51,9
+	.half	.L308-.L307
+	.byte	1,5,5,9
+	.half	.L309-.L308
+	.byte	3,1,1,5,53,9
+	.half	.L310-.L309
+	.byte	1,5,51,9
+	.half	.L311-.L310
+	.byte	1,5,5,9
+	.half	.L312-.L311
+	.byte	3,2,1,5,53,9
+	.half	.L313-.L312
+	.byte	1,5,51,9
+	.half	.L314-.L313
+	.byte	1,5,5,9
+	.half	.L315-.L314
+	.byte	3,2,1,5,51,9
+	.half	.L316-.L315
+	.byte	1,5,5,9
+	.half	.L317-.L316
+	.byte	3,1,1,5,51,9
+	.half	.L318-.L317
+	.byte	1,5,5,9
+	.half	.L319-.L318
+	.byte	3,1,1,5,51,9
+	.half	.L320-.L319
+	.byte	1,5,5,9
+	.half	.L321-.L320
+	.byte	3,1,1,5,51,9
+	.half	.L322-.L321
+	.byte	1,5,1,9
+	.half	.L323-.L322
+	.byte	3,1,1,7,9
+	.half	.L84-.L323
+	.byte	0,1,1
+.L304:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_ranges'
+.L83:
+	.word	-1,.L64,0,.L84-.L64,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_info'
+.L85:
+	.word	523
+	.half	3
+	.word	.L86
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L88,.L87
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_boundary_config',0,1,129,2,6,1,1,1
+	.word	.L66,.L148,.L65
+	.byte	4
+	.byte	'boundary_type',0,1,129,2,87
+	.word	.L149,.L150
+	.byte	4
+	.byte	'dot_num',0,1,129,2,109
+	.word	.L145,.L151
+	.byte	4
+	.byte	'dot_x1',0,1,129,2,124
+	.word	.L143,.L152
+	.byte	4
+	.byte	'dot_x2',0,1,129,2,138,1
+	.word	.L143,.L153
+	.byte	4
+	.byte	'dot_x3',0,1,129,2,152,1
+	.word	.L143,.L154
+	.byte	4
+	.byte	'dot_y1',0,1,129,2,166,1
+	.word	.L143,.L155
+	.byte	4
+	.byte	'dot_y2',0,1,129,2,180,1
+	.word	.L143,.L156
+	.byte	4
+	.byte	'dot_y3',0,1,129,2,194,1
+	.word	.L143,.L157
+	.byte	5
+	.word	.L66,.L148
+	.byte	6
+	.byte	'i',0,1,131,2,11
+	.word	.L138,.L158
+	.byte	6
+	.byte	'boundary_num',0,1,132,2,11
+	.word	.L138,.L159
+	.byte	6
+	.byte	'boundary_data_type',0,1,133,2,11
+	.word	.L138,.L160
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_abbrev'
+.L86:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_line'
+.L87:
+	.word	.L325-.L324
+.L324:
+	.half	3
+	.word	.L327-.L326
+.L326:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L327:
+	.byte	5,6,7,0,5,2
+	.word	.L66
+	.byte	3,128,2,1,5,24,9
+	.half	.L236-.L66
+	.byte	3,3,1,5,30,9
+	.half	.L237-.L236
+	.byte	3,1,1,5,5,9
+	.half	.L239-.L237
+	.byte	3,3,1,9
+	.half	.L231-.L239
+	.byte	3,2,1,5,51,9
+	.half	.L241-.L231
+	.byte	1,5,5,9
+	.half	.L242-.L241
+	.byte	3,1,1,5,53,9
+	.half	.L328-.L242
+	.byte	1,5,51,9
+	.half	.L329-.L328
+	.byte	1,5,11,9
+	.half	.L330-.L329
+	.byte	3,1,1,5,21,9
+	.half	.L243-.L330
+	.byte	1,5,52,9
+	.half	.L21-.L243
+	.byte	3,2,1,5,9,9
+	.half	.L331-.L21
+	.byte	1,5,52,9
+	.half	.L332-.L331
+	.byte	1,5,58,9
+	.half	.L333-.L332
+	.byte	1,5,56,9
+	.half	.L334-.L333
+	.byte	1,5,52,9
+	.half	.L335-.L334
+	.byte	3,1,1,5,9,9
+	.half	.L336-.L335
+	.byte	1,5,52,9
+	.half	.L337-.L336
+	.byte	1,5,58,9
+	.half	.L338-.L337
+	.byte	1,5,56,9
+	.half	.L339-.L338
+	.byte	1,5,24,9
+	.half	.L340-.L339
+	.byte	3,125,1,5,21,9
+	.half	.L20-.L340
+	.byte	1,5,14,7,9
+	.half	.L341-.L20
+	.byte	3,8,1,9
+	.half	.L246-.L341
+	.byte	3,27,1,9
+	.half	.L248-.L246
+	.byte	3,27,1,9
+	.half	.L250-.L248
+	.byte	3,30,1,5,16,9
+	.half	.L22-.L250
+	.byte	3,174,127,1,5,13,9
+	.half	.L342-.L22
+	.byte	1,5,29,7,9
+	.half	.L343-.L342
+	.byte	3,2,1,5,17,9
+	.half	.L344-.L343
+	.byte	3,1,1,5,51,9
+	.half	.L345-.L344
+	.byte	1,5,63,9
+	.half	.L346-.L345
+	.byte	1,5,60,9
+	.half	.L347-.L346
+	.byte	3,1,1,5,17,9
+	.half	.L348-.L347
+	.byte	1,5,60,9
+	.half	.L349-.L348
+	.byte	1,5,66,9
+	.half	.L350-.L349
+	.byte	1,5,62,9
+	.half	.L351-.L350
+	.byte	1,5,16,9
+	.half	.L27-.L351
+	.byte	3,2,1,5,13,9
+	.half	.L352-.L27
+	.byte	1,5,29,9
+	.half	.L353-.L352
+	.byte	3,2,1,5,17,9
+	.half	.L354-.L353
+	.byte	3,1,1,5,51,9
+	.half	.L355-.L354
+	.byte	1,5,63,9
+	.half	.L356-.L355
+	.byte	1,5,60,9
+	.half	.L357-.L356
+	.byte	3,1,1,5,17,9
+	.half	.L358-.L357
+	.byte	1,5,60,9
+	.half	.L359-.L358
+	.byte	1,5,66,9
+	.half	.L360-.L359
+	.byte	1,5,62,9
+	.half	.L361-.L360
+	.byte	1,5,16,9
+	.half	.L28-.L361
+	.byte	3,2,1,5,13,9
+	.half	.L362-.L28
+	.byte	1,5,29,9
+	.half	.L363-.L362
+	.byte	3,2,1,5,17,9
+	.half	.L364-.L363
+	.byte	3,1,1,5,51,9
+	.half	.L365-.L364
+	.byte	1,5,63,9
+	.half	.L366-.L365
+	.byte	1,5,60,9
+	.half	.L367-.L366
+	.byte	3,1,1,5,17,9
+	.half	.L368-.L367
+	.byte	1,5,60,9
+	.half	.L369-.L368
+	.byte	1,5,66,9
+	.half	.L370-.L369
+	.byte	1,5,22,9
+	.half	.L29-.L370
+	.byte	3,3,1,5,54,9
+	.half	.L371-.L29
+	.byte	1,5,16,9
+	.half	.L372-.L371
+	.byte	1,5,13,9
+	.half	.L373-.L372
+	.byte	1,5,36,7,9
+	.half	.L374-.L373
+	.byte	3,2,1,5,10,9
+	.half	.L30-.L374
+	.byte	3,2,1,5,16,9
+	.half	.L23-.L30
+	.byte	3,4,1,5,13,9
+	.half	.L375-.L23
+	.byte	1,5,29,7,9
+	.half	.L376-.L375
+	.byte	3,2,1,5,17,9
+	.half	.L377-.L376
+	.byte	3,1,1,5,51,9
+	.half	.L378-.L377
+	.byte	1,5,63,9
+	.half	.L379-.L378
+	.byte	1,5,60,9
+	.half	.L380-.L379
+	.byte	3,1,1,5,17,9
+	.half	.L381-.L380
+	.byte	1,5,60,9
+	.half	.L382-.L381
+	.byte	1,5,66,9
+	.half	.L383-.L382
+	.byte	1,5,62,9
+	.half	.L384-.L383
+	.byte	1,5,16,9
+	.half	.L32-.L384
+	.byte	3,2,1,5,13,9
+	.half	.L385-.L32
+	.byte	1,5,29,7,9
+	.half	.L386-.L385
+	.byte	3,2,1,5,17,9
+	.half	.L387-.L386
+	.byte	3,1,1,5,51,9
+	.half	.L388-.L387
+	.byte	1,5,63,9
+	.half	.L389-.L388
+	.byte	1,5,60,9
+	.half	.L390-.L389
+	.byte	3,1,1,5,17,9
+	.half	.L391-.L390
+	.byte	1,5,60,9
+	.half	.L392-.L391
+	.byte	1,5,66,9
+	.half	.L393-.L392
+	.byte	1,5,62,9
+	.half	.L394-.L393
+	.byte	1,5,16,9
+	.half	.L33-.L394
+	.byte	3,2,1,5,13,9
+	.half	.L395-.L33
+	.byte	1,5,29,9
+	.half	.L396-.L395
+	.byte	3,2,1,5,17,9
+	.half	.L397-.L396
+	.byte	3,1,1,5,51,9
+	.half	.L398-.L397
+	.byte	1,5,63,9
+	.half	.L399-.L398
+	.byte	1,5,60,9
+	.half	.L400-.L399
+	.byte	3,1,1,5,17,9
+	.half	.L401-.L400
+	.byte	1,5,60,9
+	.half	.L402-.L401
+	.byte	1,5,66,9
+	.half	.L403-.L402
+	.byte	1,5,22,9
+	.half	.L34-.L403
+	.byte	3,3,1,5,54,9
+	.half	.L404-.L34
+	.byte	1,5,16,9
+	.half	.L405-.L404
+	.byte	1,5,13,9
+	.half	.L406-.L405
+	.byte	1,5,36,7,9
+	.half	.L407-.L406
+	.byte	3,2,1,5,10,9
+	.half	.L35-.L407
+	.byte	3,2,1,5,17,9
+	.half	.L24-.L35
+	.byte	3,4,1,5,16,9
+	.half	.L408-.L24
+	.byte	1,5,37,7,9
+	.half	.L409-.L408
+	.byte	1,5,42,9
+	.half	.L410-.L409
+	.byte	1,5,29,7,9
+	.half	.L411-.L410
+	.byte	3,2,1,5,17,9
+	.half	.L412-.L411
+	.byte	3,1,1,5,51,9
+	.half	.L413-.L412
+	.byte	1,5,63,9
+	.half	.L414-.L413
+	.byte	1,5,60,9
+	.half	.L415-.L414
+	.byte	3,1,1,5,17,9
+	.half	.L416-.L415
+	.byte	1,5,60,9
+	.half	.L417-.L416
+	.byte	1,5,66,9
+	.half	.L418-.L417
+	.byte	1,5,60,9
+	.half	.L419-.L418
+	.byte	3,1,1,5,17,9
+	.half	.L420-.L419
+	.byte	1,5,60,9
+	.half	.L421-.L420
+	.byte	1,5,66,9
+	.half	.L422-.L421
+	.byte	1,5,62,9
+	.half	.L423-.L422
+	.byte	1,5,17,9
+	.half	.L37-.L423
+	.byte	3,2,1,5,16,9
+	.half	.L424-.L37
+	.byte	1,5,37,9
+	.half	.L425-.L424
+	.byte	1,5,42,9
+	.half	.L426-.L425
+	.byte	1,5,29,7,9
+	.half	.L427-.L426
+	.byte	3,2,1,5,17,9
+	.half	.L428-.L427
+	.byte	3,1,1,5,51,9
+	.half	.L429-.L428
+	.byte	1,5,63,9
+	.half	.L430-.L429
+	.byte	1,5,60,9
+	.half	.L431-.L430
+	.byte	3,1,1,5,17,9
+	.half	.L432-.L431
+	.byte	1,5,60,9
+	.half	.L433-.L432
+	.byte	1,5,66,9
+	.half	.L434-.L433
+	.byte	1,5,60,9
+	.half	.L435-.L434
+	.byte	3,1,1,5,17,9
+	.half	.L436-.L435
+	.byte	1,5,60,9
+	.half	.L437-.L436
+	.byte	1,5,66,9
+	.half	.L438-.L437
+	.byte	1,5,62,9
+	.half	.L439-.L438
+	.byte	1,5,17,9
+	.half	.L39-.L439
+	.byte	3,2,1,5,16,9
+	.half	.L440-.L39
+	.byte	1,5,37,9
+	.half	.L441-.L440
+	.byte	1,5,42,9
+	.half	.L270-.L441
+	.byte	1,5,29,9
+	.half	.L442-.L270
+	.byte	3,2,1,5,17,9
+	.half	.L443-.L442
+	.byte	3,1,1,5,51,9
+	.half	.L444-.L443
+	.byte	1,5,63,9
+	.half	.L445-.L444
+	.byte	1,5,60,9
+	.half	.L446-.L445
+	.byte	3,1,1,5,17,9
+	.half	.L447-.L446
+	.byte	1,5,60,9
+	.half	.L448-.L447
+	.byte	1,5,66,9
+	.half	.L449-.L448
+	.byte	1,5,60,9
+	.half	.L450-.L449
+	.byte	3,1,1,5,17,9
+	.half	.L451-.L450
+	.byte	1,5,60,9
+	.half	.L452-.L451
+	.byte	1,5,66,9
+	.half	.L453-.L452
+	.byte	1,5,23,9
+	.half	.L41-.L453
+	.byte	3,3,1,5,55,9
+	.half	.L454-.L41
+	.byte	1,5,17,9
+	.half	.L455-.L454
+	.byte	1,5,16,9
+	.half	.L456-.L455
+	.byte	1,5,73,7,9
+	.half	.L457-.L456
+	.byte	1,5,105,9
+	.half	.L458-.L457
+	.byte	1,5,67,9
+	.half	.L459-.L458
+	.byte	1,5,71,9
+	.half	.L460-.L459
+	.byte	1,5,36,7,9
+	.half	.L43-.L460
+	.byte	3,2,1,5,10,9
+	.half	.L44-.L43
+	.byte	3,2,1,5,26,9
+	.half	.L25-.L44
+	.byte	3,2,1,5,5,9
+	.half	.L31-.L25
+	.byte	3,3,1,5,68,9
+	.half	.L461-.L31
+	.byte	1,5,96,9
+	.half	.L462-.L461
+	.byte	1,5,74,9
+	.half	.L240-.L462
+	.byte	1,5,102,9
+	.half	.L463-.L240
+	.byte	1,5,51,9
+	.half	.L238-.L463
+	.byte	1,5,1,9
+	.half	.L464-.L238
+	.byte	3,1,1,7,9
+	.half	.L89-.L464
+	.byte	0,1,1
+.L325:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_ranges'
+.L88:
+	.word	-1,.L66,0,.L89-.L66,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_info'
+.L90:
+	.word	265
+	.half	3
+	.word	.L91
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L93,.L92
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_send',0,1,245,2,6,1,1,1
+	.word	.L68,.L161,.L67
+	.byte	4
+	.word	.L68,.L161
+	.byte	0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_abbrev'
+.L91:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,0,17,1,18,1,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_line'
+.L92:
+	.word	.L466-.L465
+.L465:
+	.half	3
+	.word	.L468-.L467
+.L467:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L468:
+	.byte	5,5,7,0,5,2
+	.word	.L68
+	.byte	3,247,2,1,5,41,9
+	.half	.L469-.L68
+	.byte	3,2,1,5,73,9
+	.half	.L470-.L469
+	.byte	1,5,87,9
+	.half	.L471-.L470
+	.byte	1,5,119,9
+	.half	.L472-.L471
+	.byte	1,5,132,1,9
+	.half	.L473-.L472
+	.byte	1,5,166,1,9
+	.half	.L474-.L473
+	.byte	1,5,176,1,9
+	.half	.L475-.L474
+	.byte	1,5,184,1,9
+	.half	.L476-.L475
+	.byte	1,5,216,1,9
+	.half	.L477-.L476
+	.byte	1,5,224,1,9
+	.half	.L478-.L477
+	.byte	1,5,128,2,9
+	.half	.L479-.L478
+	.byte	1,5,8,9
+	.half	.L480-.L479
+	.byte	3,2,1,5,42,9
+	.half	.L481-.L480
+	.byte	1,5,52,9
+	.half	.L482-.L481
+	.byte	1,5,5,9
+	.half	.L483-.L482
+	.byte	1,5,45,7,9
+	.half	.L484-.L483
+	.byte	3,2,1,5,1,9
+	.half	.L47-.L484
+	.byte	3,2,1,7,9
+	.half	.L94-.L47
+	.byte	0,1,1
+.L466:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_ranges'
+.L93:
+	.word	-1,.L68,0,.L94-.L68,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_info'
+.L95:
+	.word	368
+	.half	3
+	.word	.L96
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L98,.L97
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_data_analysis',0,1,138,3,6,1,1,1
+	.word	.L70,.L162,.L69
+	.byte	4
+	.word	.L70,.L162
+	.byte	5
+	.byte	'temp_sum',0,1,140,3,12
+	.word	.L138,.L163
+	.byte	5
+	.byte	'read_length',0,1,141,3,12
+	.word	.L164,.L165
+	.byte	5
+	.byte	'receive_packet',0,1,142,3,42
+	.word	.L166,.L167
+	.byte	5
+	.byte	'temp_buffer',0,1,145,3,13
+	.word	.L168,.L169
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_abbrev'
+.L96:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,11,1,17,1,18,1,0,0,5,52,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_line'
+.L97:
+	.word	.L486-.L485
+.L485:
+	.half	3
+	.word	.L488-.L487
+.L487:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L488:
+	.byte	5,6,7,0,5,2
+	.word	.L70
+	.byte	3,137,3,1,5,19,9
+	.half	.L276-.L70
+	.byte	3,10,1,5,64,9
+	.half	.L489-.L276
+	.byte	1,5,77,9
+	.half	.L490-.L489
+	.byte	1,5,17,9
+	.half	.L491-.L490
+	.byte	1,5,8,9
+	.half	.L492-.L491
+	.byte	3,1,1,5,5,9
+	.half	.L493-.L492
+	.byte	1,5,28,7,9
+	.half	.L494-.L493
+	.byte	3,3,1,5,62,9
+	.half	.L495-.L494
+	.byte	1,5,75,9
+	.half	.L496-.L495
+	.byte	1,5,93,9
+	.half	.L48-.L496
+	.byte	3,3,1,5,23,9
+	.half	.L50-.L48
+	.byte	3,2,1,5,21,9
+	.half	.L497-.L50
+	.byte	1,5,27,9
+	.half	.L498-.L497
+	.byte	3,1,1,5,61,9
+	.half	.L499-.L498
+	.byte	1,5,75,9
+	.half	.L500-.L499
+	.byte	1,5,88,9
+	.half	.L501-.L500
+	.byte	1,5,69,9
+	.half	.L502-.L501
+	.byte	3,2,1,5,12,9
+	.half	.L503-.L502
+	.byte	1,5,9,9
+	.half	.L504-.L503
+	.byte	1,5,27,7,9
+	.half	.L505-.L504
+	.byte	3,3,1,5,25,9
+	.half	.L506-.L505
+	.byte	1,5,28,9
+	.half	.L507-.L506
+	.byte	1,5,38,9
+	.half	.L51-.L507
+	.byte	3,6,1,5,41,9
+	.half	.L277-.L51
+	.byte	3,1,1,5,39,9
+	.half	.L508-.L277
+	.byte	1,5,60,9
+	.half	.L509-.L508
+	.byte	3,1,1,5,73,9
+	.half	.L510-.L509
+	.byte	1,5,13,9
+	.half	.L511-.L510
+	.byte	1,5,60,7,9
+	.half	.L512-.L511
+	.byte	3,3,1,5,70,9
+	.half	.L278-.L512
+	.byte	1,5,45,9
+	.half	.L513-.L278
+	.byte	1,5,17,9
+	.half	.L514-.L513
+	.byte	1,5,45,9
+	.half	.L515-.L514
+	.byte	1,5,91,9
+	.half	.L516-.L515
+	.byte	1,5,75,9
+	.half	.L517-.L516
+	.byte	1,5,72,9
+	.half	.L518-.L517
+	.byte	3,1,1,5,17,9
+	.half	.L519-.L518
+	.byte	1,5,57,9
+	.half	.L520-.L519
+	.byte	1,5,89,9
+	.half	.L521-.L520
+	.byte	1,5,87,9
+	.half	.L522-.L521
+	.byte	1,5,97,9
+	.half	.L523-.L522
+	.byte	3,127,1,5,31,9
+	.half	.L53-.L523
+	.byte	3,5,1,5,29,9
+	.half	.L279-.L53
+	.byte	1,5,27,9
+	.half	.L52-.L279
+	.byte	3,5,1,5,61,9
+	.half	.L524-.L52
+	.byte	1,5,75,9
+	.half	.L525-.L524
+	.byte	1,5,88,9
+	.half	.L526-.L525
+	.byte	1,5,69,9
+	.half	.L49-.L526
+	.byte	3,99,1,5,93,9
+	.half	.L527-.L49
+	.byte	1,5,1,7,9
+	.half	.L528-.L527
+	.byte	3,31,1,7,9
+	.half	.L99-.L528
+	.byte	0,1,1
+.L486:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_ranges'
+.L98:
+	.word	-1,.L70,0,.L99-.L70,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_info'
+.L100:
+	.word	319
+	.half	3
+	.word	.L101
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L103,.L102
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_sum',0,1,77,14
+	.word	.L138
+	.byte	1,1
+	.word	.L56,.L170,.L55
+	.byte	4
+	.byte	'buffer',0,1,77,45
+	.word	.L171,.L172
+	.byte	4
+	.byte	'length',0,1,77,60
+	.word	.L164,.L173
+	.byte	5
+	.word	.L56,.L170
+	.byte	6
+	.byte	'temp_sum',0,1,79,11
+	.word	.L138,.L174
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_abbrev'
+.L101:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,73,16
+	.byte	54,15,39,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_line'
+.L102:
+	.word	.L530-.L529
+.L529:
+	.half	3
+	.word	.L532-.L531
+.L531:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L532:
+	.byte	5,20,7,0,5,2
+	.word	.L56
+	.byte	3,206,0,1,5,19,9
+	.half	.L197-.L56
+	.byte	3,2,1,5,17,9
+	.half	.L3-.L197
+	.byte	1,5,21,9
+	.half	.L533-.L3
+	.byte	3,2,1,5,18,9
+	.half	.L534-.L533
+	.byte	1,5,28,9
+	.half	.L199-.L534
+	.byte	1,5,19,9
+	.half	.L2-.L199
+	.byte	3,126,1,5,5,7,9
+	.half	.L535-.L2
+	.byte	3,5,1,5,1,9
+	.half	.L4-.L535
+	.byte	3,1,1,7,9
+	.half	.L104-.L4
+	.byte	0,1,1
+.L530:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_ranges'
+.L103:
+	.word	-1,.L56,0,.L104-.L56,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_info'
+.L105:
+	.word	404
+	.half	3
+	.word	.L106
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L108,.L107
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_data_send',0,1,99,6,1,1,1
+	.word	.L58,.L175,.L57
+	.byte	4
+	.byte	'camera_type',0,1,99,78
+	.word	.L141,.L176
+	.byte	4
+	.byte	'image_addr',0,1,99,97
+	.word	.L143,.L177
+	.byte	4
+	.byte	'boundary_num',0,1,99,115
+	.word	.L138,.L178
+	.byte	4
+	.byte	'width',0,1,99,136,1
+	.word	.L145,.L179
+	.byte	4
+	.byte	'height',0,1,99,150,1
+	.word	.L145,.L180
+	.byte	5
+	.word	.L58,.L175
+	.byte	6
+	.byte	'image_size',0,1,101,12
+	.word	.L164,.L181
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_abbrev'
+.L106:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_line'
+.L107:
+	.word	.L537-.L536
+.L536:
+	.half	3
+	.word	.L539-.L538
+.L538:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L539:
+	.byte	5,6,7,0,5,2
+	.word	.L58
+	.byte	3,226,0,1,5,23,9
+	.half	.L207-.L58
+	.byte	3,2,1,5,5,9
+	.half	.L208-.L207
+	.byte	3,2,1,5,53,9
+	.half	.L540-.L208
+	.byte	1,5,51,9
+	.half	.L541-.L540
+	.byte	1,5,5,9
+	.half	.L542-.L541
+	.byte	3,1,1,5,53,9
+	.half	.L543-.L542
+	.byte	1,5,51,9
+	.half	.L544-.L543
+	.byte	1,5,76,9
+	.half	.L545-.L544
+	.byte	3,1,1,5,95,7,9
+	.half	.L546-.L545
+	.byte	1,5,99,9
+	.half	.L547-.L546
+	.byte	1,5,95,9
+	.half	.L5-.L547
+	.byte	1,5,5,9
+	.half	.L6-.L5
+	.byte	1,5,66,9
+	.half	.L548-.L6
+	.byte	1,5,104,9
+	.half	.L549-.L548
+	.byte	1,5,72,9
+	.half	.L550-.L549
+	.byte	1,5,110,9
+	.half	.L551-.L550
+	.byte	1,5,51,9
+	.half	.L552-.L551
+	.byte	1,5,5,9
+	.half	.L553-.L552
+	.byte	3,2,1,5,53,9
+	.half	.L554-.L553
+	.byte	1,5,51,9
+	.half	.L555-.L554
+	.byte	1,5,5,9
+	.half	.L556-.L555
+	.byte	3,1,1,5,51,9
+	.half	.L557-.L556
+	.byte	1,5,5,9
+	.half	.L558-.L557
+	.byte	3,1,1,5,51,9
+	.half	.L559-.L558
+	.byte	1,5,5,9
+	.half	.L560-.L559
+	.byte	3,3,1,5,58,9
+	.half	.L561-.L560
+	.byte	1,5,90,9
+	.half	.L562-.L561
+	.byte	1,5,14,9
+	.half	.L200-.L562
+	.byte	3,5,1,9
+	.half	.L563-.L200
+	.byte	3,5,1,9
+	.half	.L564-.L563
+	.byte	3,5,1,5,32,9
+	.half	.L7-.L564
+	.byte	3,120,1,5,43,9
+	.half	.L206-.L7
+	.byte	1,5,41,9
+	.half	.L565-.L206
+	.byte	1,5,10,9
+	.half	.L566-.L565
+	.byte	3,1,1,5,32,9
+	.half	.L8-.L566
+	.byte	3,4,1,5,10,9
+	.half	.L567-.L8
+	.byte	3,1,1,5,32,9
+	.half	.L9-.L567
+	.byte	3,4,1,5,41,9
+	.half	.L209-.L9
+	.byte	1,5,10,9
+	.half	.L568-.L209
+	.byte	3,1,1,5,8,9
+	.half	.L11-.L568
+	.byte	3,4,1,5,5,9
+	.half	.L569-.L11
+	.byte	1,5,9,7,9
+	.half	.L570-.L569
+	.byte	3,2,1,5,58,9
+	.half	.L571-.L570
+	.byte	1,5,1,9
+	.half	.L14-.L571
+	.byte	3,2,1,7,9
+	.half	.L109-.L14
+	.byte	0,1,1
+.L537:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_ranges'
+.L108:
+	.word	-1,.L58,0,.L109-.L58,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_info'
+.L110:
+	.word	328
+	.half	3
+	.word	.L111
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1
+	.word	.L113,.L112
+	.byte	2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_dot_send',0,1,151,1,6,1,1,1
+	.word	.L60,.L182,.L59
+	.byte	4
+	.byte	'buffer',0,1,151,1,83
+	.word	.L183,.L184
+	.byte	5
+	.word	.L60,.L182
+	.byte	6
+	.byte	'i',0,1,153,1,12
+	.word	.L138,.L185
+	.byte	6
+	.byte	'dot_bytes',0,1,154,1,12
+	.word	.L145,.L186
+	.byte	0,0,0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_abbrev'
+.L111:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,85,6,16,6,0,0,2,61,0,24,16,0,0,3,46,1,3,8,58,15,59,15,57,15,54,15
+	.byte	39,12,63,12,17,1,18,1,64,6,0,0,4,5,0,3,8,58,15,59,15,57,15,73,16,2,6,0,0,5,11,1,17,1,18,1,0,0,6,52,0,3
+	.byte	8,58,15,59,15,57,15,73,16,2,6,0,0,0
+	.sdecl	'.debug_line',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_line'
+.L112:
+	.word	.L573-.L572
+.L572:
+	.half	3
+	.word	.L575-.L574
+.L574:
+	.byte	2,1,-4,9,10,0,1,1,1,1,0,0,0,1,0
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0,0,0,0,0
+.L575:
+	.byte	5,6,7,0,5,2
+	.word	.L60
+	.byte	3,150,1,1,5,17,9
+	.half	.L213-.L60
+	.byte	3,5,1,5,51,9
+	.half	.L576-.L213
+	.byte	1,5,8,9
+	.half	.L214-.L576
+	.byte	3,2,1,5,42,9
+	.half	.L577-.L214
+	.byte	1,5,5,9
+	.half	.L578-.L577
+	.byte	1,5,19,7,9
+	.half	.L579-.L578
+	.byte	3,2,1,5,5,9
+	.half	.L15-.L579
+	.byte	3,4,1,5,58,9
+	.half	.L580-.L15
+	.byte	1,5,94,9
+	.half	.L581-.L580
+	.byte	1,5,10,9
+	.half	.L582-.L581
+	.byte	3,2,1,5,56,9
+	.half	.L215-.L582
+	.byte	1,5,12,9
+	.half	.L17-.L215
+	.byte	3,3,1,5,38,9
+	.half	.L583-.L17
+	.byte	1,5,9,9
+	.half	.L584-.L583
+	.byte	1,5,13,7,9
+	.half	.L585-.L584
+	.byte	3,2,1,5,83,9
+	.half	.L586-.L585
+	.byte	1,5,88,9
+	.half	.L587-.L586
+	.byte	1,5,12,9
+	.half	.L18-.L587
+	.byte	3,4,1,5,38,9
+	.half	.L588-.L18
+	.byte	1,5,9,9
+	.half	.L589-.L588
+	.byte	1,5,13,7,9
+	.half	.L590-.L589
+	.byte	3,4,1,5,83,9
+	.half	.L591-.L590
+	.byte	1,5,88,9
+	.half	.L592-.L591
+	.byte	1,5,59,9
+	.half	.L19-.L592
+	.byte	3,115,1,5,56,9
+	.half	.L16-.L19
+	.byte	1,5,1,7,9
+	.half	.L593-.L16
+	.byte	3,16,1,7,9
+	.half	.L114-.L593
+	.byte	0,1,1
+.L573:
+	.sdecl	'.debug_ranges',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_ranges'
+.L113:
+	.word	-1,.L60,0,.L114-.L60,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_oscilloscope_data')
+	.sect	'.debug_info'
+.L115:
+	.word	248
+	.half	3
+	.word	.L116
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_oscilloscope_data',0,3,66,49
+	.word	.L187
+	.byte	1,5,3
+	.word	seekfree_assistant_oscilloscope_data
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_oscilloscope_data')
+	.sect	'.debug_abbrev'
+.L116:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_parameter')
+	.sect	'.debug_info'
+.L117:
+	.word	240
+	.half	3
+	.word	.L118
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_parameter',0,3,67,9
+	.word	.L188
+	.byte	1,5,3
+	.word	seekfree_assistant_parameter
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_parameter')
+	.sect	'.debug_abbrev'
+.L118:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_parameter_update_flag')
+	.sect	'.debug_info'
+.L119:
+	.word	252
+	.half	3
+	.word	.L120
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_parameter_update_flag',0,3,68,9
+	.word	.L189
+	.byte	1,5,3
+	.word	seekfree_assistant_parameter_update_flag
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_parameter_update_flag')
+	.sect	'.debug_abbrev'
+.L120:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_buffer')
+	.sect	'.debug_info'
+.L121:
+	.word	236
+	.half	3
+	.word	.L122
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_buffer',0,3,46,21
+	.word	.L190
+	.byte	5,3
+	.word	seekfree_assistant_buffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_buffer')
+	.sect	'.debug_abbrev'
+.L122:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_fifo')
+	.sect	'.debug_info'
+.L123:
+	.word	234
+	.half	3
+	.word	.L124
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_fifo',0,3,47,21
+	.word	.L191
+	.byte	5,3
+	.word	seekfree_assistant_fifo
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_fifo')
+	.sect	'.debug_abbrev'
+.L124:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_data')
+	.sect	'.debug_info'
+.L125:
+	.word	241
+	.half	3
+	.word	.L126
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_data',0,3,59,49
+	.word	.L192
+	.byte	5,3
+	.word	seekfree_assistant_camera_data
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_data')
+	.sect	'.debug_abbrev'
+.L126:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_dot_data')
+	.sect	'.debug_info'
+.L127:
+	.word	245
+	.half	3
+	.word	.L128
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_dot_data',0,3,60,49
+	.word	.L193
+	.byte	5,3
+	.word	seekfree_assistant_camera_dot_data
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_dot_data')
+	.sect	'.debug_abbrev'
+.L128:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_camera_buffer')
+	.sect	'.debug_info'
+.L129:
+	.word	243
+	.half	3
+	.word	.L130
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_camera_buffer',0,3,61,49
+	.word	.L194
+	.byte	5,3
+	.word	seekfree_assistant_camera_buffer
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_camera_buffer')
+	.sect	'.debug_abbrev'
+.L130:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,2,9,0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_transfer_callback')
+	.sect	'.debug_info'
+.L131:
+	.word	248
+	.half	3
+	.word	.L132
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_transfer_callback',0,3,63,49
+	.word	.L195
+	.byte	1,5,3
+	.word	seekfree_assistant_transfer_callback
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_transfer_callback')
+	.sect	'.debug_abbrev'
+.L132:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_info',debug,cluster('seekfree_assistant_receive_callback')
+	.sect	'.debug_info'
+.L133:
+	.word	247
+	.half	3
+	.word	.L134
+	.byte	4,1
+	.byte	'../libraries/zf_components/seekfree_assistant.c',0
+	.byte	'TASKING VX-toolset for AURIX Development Studio (non-commercial): C compiler',0
+	.byte	'F:\\Smart_car\\code\\debugging\\back_car\\LADRC-V0.3\\Debug\\',0,12,1,2
+	.word	.L71
+	.byte	3
+	.byte	'seekfree_assistant_receive_callback',0,3,64,49
+	.word	.L196
+	.byte	1,5,3
+	.word	seekfree_assistant_receive_callback
+	.byte	0
+	.sdecl	'.debug_abbrev',debug,cluster('seekfree_assistant_receive_callback')
+	.sect	'.debug_abbrev'
+.L134:
+	.byte	1,17,1,3,8,37,8,27,8,19,15,128,70,12,0,0,2,61,0,24,16,0,0,3,52,0,3,8,58,15,59,15,57,15,73,16,63,12,2,9
+	.byte	0,0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_loc'
+.L160:
+	.word	-1,.L66,.L239-.L66,.L240-.L66
+	.half	1
+	.byte	91
+	.word	0,0
+.L159:
+	.word	-1,.L66,.L237-.L66,.L238-.L66
+	.half	1
+	.byte	90
+	.word	0,0
+.L150:
+	.word	-1,.L66,0,.L228-.L66
+	.half	1
+	.byte	84
+	.word	.L245-.L66,.L246-.L66
+	.half	1
+	.byte	89
+	.word	.L247-.L66,.L248-.L66
+	.half	1
+	.byte	89
+	.word	.L249-.L66,.L250-.L66
+	.half	1
+	.byte	89
+	.word	.L251-.L66,.L252-.L66
+	.half	1
+	.byte	89
+	.word	0,0
+.L151:
+	.word	-1,.L66,0,.L229-.L66
+	.half	1
+	.byte	85
+	.word	.L241-.L66,.L242-.L66
+	.half	1
+	.byte	88
+	.word	0,0
+.L152:
+	.word	-1,.L66,0,.L230-.L66
+	.half	1
+	.byte	100
+	.word	.L232-.L66,.L148-.L66
+	.half	1
+	.byte	108
+	.word	0,0
+.L153:
+	.word	-1,.L66,0,.L231-.L66
+	.half	1
+	.byte	101
+	.word	.L233-.L66,.L148-.L66
+	.half	2
+	.byte	145,120
+	.word	.L253-.L66,.L254-.L66
+	.half	1
+	.byte	98
+	.word	.L255-.L66,.L28-.L66
+	.half	1
+	.byte	98
+	.word	.L265-.L66,.L266-.L66
+	.half	1
+	.byte	98
+	.word	.L267-.L66,.L268-.L66
+	.half	1
+	.byte	111
+	.word	0,0
+.L154:
+	.word	-1,.L66,0,.L231-.L66
+	.half	1
+	.byte	102
+	.word	.L234-.L66,.L148-.L66
+	.half	2
+	.byte	145,124
+	.word	.L256-.L66,.L257-.L66
+	.half	1
+	.byte	111
+	.word	.L258-.L66,.L29-.L66
+	.half	1
+	.byte	111
+	.word	.L269-.L66,.L270-.L66
+	.half	1
+	.byte	111
+	.word	.L273-.L66,.L274-.L66
+	.half	1
+	.byte	111
+	.word	0,0
+.L155:
+	.word	-1,.L66,0,.L231-.L66
+	.half	1
+	.byte	103
+	.word	.L235-.L66,.L148-.L66
+	.half	1
+	.byte	109
+	.word	0,0
+.L156:
+	.word	-1,.L66,0,.L148-.L66
+	.half	2
+	.byte	145,0
+	.word	.L236-.L66,.L148-.L66
+	.half	1
+	.byte	110
+	.word	0,0
+.L157:
+	.word	-1,.L66,0,.L148-.L66
+	.half	2
+	.byte	145,4
+	.word	.L261-.L66,.L262-.L66
+	.half	1
+	.byte	98
+	.word	.L263-.L66,.L34-.L66
+	.half	1
+	.byte	98
+	.word	.L271-.L66,.L272-.L66
+	.half	1
+	.byte	98
+	.word	.L275-.L66,.L41-.L66
+	.half	1
+	.byte	98
+	.word	0,0
+.L158:
+	.word	-1,.L66,.L243-.L66,.L244-.L66
+	.half	1
+	.byte	81
+	.word	.L32-.L66,.L259-.L66
+	.half	1
+	.byte	81
+	.word	.L33-.L66,.L260-.L66
+	.half	1
+	.byte	81
+	.word	.L37-.L66,.L264-.L66
+	.half	1
+	.byte	81
+	.word	.L39-.L66,.L148-.L66
+	.half	1
+	.byte	81
+	.word	0,0
+.L65:
+	.word	-1,.L66,0,.L227-.L66
+	.half	2
+	.byte	138,0
+	.word	.L227-.L66,.L148-.L66
+	.half	2
+	.byte	138,8
+	.word	.L148-.L66,.L148-.L66
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_loc'
+.L178:
+	.word	-1,.L58,0,.L200-.L58
+	.half	1
+	.byte	85
+	.word	0,0
+.L176:
+	.word	-1,.L58,0,.L201-.L58
+	.half	1
+	.byte	84
+	.word	.L203-.L58,.L175-.L58
+	.half	1
+	.byte	90
+	.word	0,0
+.L180:
+	.word	-1,.L58,0,.L200-.L58
+	.half	1
+	.byte	87
+	.word	.L207-.L58,.L175-.L58
+	.half	1
+	.byte	92
+	.word	0,0
+.L177:
+	.word	-1,.L58,0,.L202-.L58
+	.half	1
+	.byte	100
+	.word	.L204-.L58,.L175-.L58
+	.half	1
+	.byte	108
+	.word	.L210-.L58,.L14-.L58
+	.half	1
+	.byte	100
+	.word	0,0
+.L181:
+	.word	-1,.L58,.L208-.L58,.L175-.L58
+	.half	1
+	.byte	88
+	.word	.L211-.L58,.L14-.L58
+	.half	1
+	.byte	84
+	.word	0,0
+.L57:
+	.word	-1,.L58,0,.L175-.L58
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L179:
+	.word	-1,.L58,0,.L200-.L58
+	.half	1
+	.byte	86
+	.word	.L205-.L58,.L206-.L58
+	.half	1
+	.byte	91
+	.word	.L8-.L58,.L209-.L58
+	.half	1
+	.byte	91
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_loc'
+.L184:
+	.word	-1,.L60,0,.L212-.L60
+	.half	1
+	.byte	100
+	.word	.L213-.L60,.L182-.L60
+	.half	1
+	.byte	108
+	.word	0,0
+.L186:
+	.word	-1,.L60,.L214-.L60,.L182-.L60
+	.half	1
+	.byte	88
+	.word	.L216-.L60,.L18-.L60
+	.half	1
+	.byte	84
+	.word	.L217-.L60,.L19-.L60
+	.half	1
+	.byte	84
+	.word	0,0
+.L185:
+	.word	-1,.L60,.L215-.L60,.L182-.L60
+	.half	1
+	.byte	89
+	.word	0,0
+.L59:
+	.word	-1,.L60,0,.L182-.L60
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_loc'
+.L142:
+	.word	-1,.L64,0,.L140-.L64
+	.half	1
+	.byte	84
+	.word	0,0
+.L147:
+	.word	-1,.L64,0,.L140-.L64
+	.half	1
+	.byte	86
+	.word	0,0
+.L144:
+	.word	-1,.L64,0,.L140-.L64
+	.half	1
+	.byte	100
+	.word	0,0
+.L63:
+	.word	-1,.L64,0,.L140-.L64
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L146:
+	.word	-1,.L64,0,.L140-.L64
+	.half	1
+	.byte	85
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_loc'
+.L67:
+	.word	-1,.L68,0,.L161-.L68
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_loc'
+.L165:
+	.word	-1,.L70,0,.L162-.L70
+	.half	3
+	.byte	145,248,126
+	.word	0,0
+.L167:
+	.word	0,0
+.L69:
+	.word	-1,.L70,0,.L276-.L70
+	.half	2
+	.byte	138,0
+	.word	.L276-.L70,.L162-.L70
+	.half	3
+	.byte	138,136,1
+	.word	.L162-.L70,.L162-.L70
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L169:
+	.word	-1,.L70,0,.L162-.L70
+	.half	3
+	.byte	145,252,126
+	.word	0,0
+.L163:
+	.word	-1,.L70,.L277-.L70,.L278-.L70
+	.half	1
+	.byte	95
+	.word	.L53-.L70,.L279-.L70
+	.half	1
+	.byte	95
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_loc'
+.L139:
+	.word	-1,.L62,.L220-.L62,.L135-.L62
+	.half	1
+	.byte	88
+	.word	.L223-.L62,.L222-.L62
+	.half	1
+	.byte	84
+	.word	.L226-.L62,.L225-.L62
+	.half	1
+	.byte	84
+	.word	0,0
+.L137:
+	.word	-1,.L62,0,.L218-.L62
+	.half	1
+	.byte	100
+	.word	.L219-.L62,.L135-.L62
+	.half	1
+	.byte	111
+	.word	.L221-.L62,.L222-.L62
+	.half	1
+	.byte	100
+	.word	.L224-.L62,.L225-.L62
+	.half	1
+	.byte	100
+	.word	0,0
+.L61:
+	.word	-1,.L62,0,.L135-.L62
+	.half	2
+	.byte	138,0
+	.word	0,0
+	.sdecl	'.debug_loc',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_loc'
+.L172:
+	.word	-1,.L56,0,.L170-.L56
+	.half	1
+	.byte	100
+	.word	0,0
+.L173:
+	.word	-1,.L56,0,.L170-.L56
+	.half	1
+	.byte	84
+	.word	0,0
+.L55:
+	.word	-1,.L56,0,.L170-.L56
+	.half	2
+	.byte	138,0
+	.word	0,0
+.L174:
+	.word	-1,.L56,.L197-.L56,.L198-.L56
+	.half	1
+	.byte	82
+	.word	.L199-.L56,.L170-.L56
+	.half	1
+	.byte	82
+	.word	0,0
+	.sdecl	'.debug_frame',debug
+	.sect	'.debug_frame'
+.L594:
+	.word	48
+	.word	-1
+	.byte	3,0,2,1,27,12,26,0,8,26,8,27,8,30,8,29,8,28,8,16,8,17,8,24,8,25,8,31,8,32,8,33,8,34,8,35,8,36,8,37,8,38
+	.byte	8,39
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_sum')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L594,.L56,.L170-.L56
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_camera_data_send')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L594,.L58,.L175-.L58
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_camera_dot_send')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L594,.L60,.L182-.L60
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_oscilloscope_send')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L594,.L62,.L135-.L62
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_camera_information_config')
+	.sect	'.debug_frame'
+	.word	24
+	.word	.L594,.L64,.L140-.L64
+	.byte	8,18,8,19,8,21,8,22,8,23,0,0
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_camera_boundary_config')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L594,.L66,.L148-.L66
+	.byte	4
+	.word	(.L227-.L66)/2
+	.byte	19,8,22,26,3,19,138,8,4
+	.word	(.L148-.L227)/2
+	.byte	19,0,8,26,0,0
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_camera_send')
+	.sect	'.debug_frame'
+	.word	12
+	.word	.L594,.L68,.L161-.L68
+	.sdecl	'.debug_frame',debug,cluster('seekfree_assistant_data_analysis')
+	.sect	'.debug_frame'
+	.word	36
+	.word	.L594,.L70,.L162-.L70
+	.byte	4
+	.word	(.L276-.L70)/2
+	.byte	19,136,1,22,26,4,19,138,136,1,4
+	.word	(.L162-.L276)/2
+	.byte	19,0,8,26
+	; Module end
